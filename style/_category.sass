@@ -30,9 +30,25 @@
   color: $background
   font-family: $fontfamilyLL
   text-transform: uppercase
+  position: relative
 
 .subcategory
   border-bottom: solid 1px $borderColor2
+
+.hide__toggle:before
+  content: '\f273'
+  font-family: 'Material-Design-Iconic-Font'
+  position: absolute
+  font-size: 20px
+  right: 0
+  cursor: pointer
+
+.hide .hide__toggle:before
+  content: '\f278'
+
+.hide .subcategory__ul, .hide  .filter-param
+  height: 0
+  overflow: hidden
 
 .subcategory__ul
   padding-left: 20px
@@ -50,6 +66,7 @@
 .subcategory__ul li.active, .subcategory__ul li.active a
   color: $background
 
+
 /* ----- FILTERS -----*/
 .filters
   width: 280px
@@ -60,6 +77,7 @@
   color: $background
   font-family: $fontfamilyLL
   text-transform: uppercase
+  position: relative
 
 .filter
   border-bottom: solid 1px $borderColor2
@@ -149,6 +167,23 @@
   z-index: 1
   pointer-events: none
 
+.product-sort-view__a
+  font-size: 28px
+  width: 35px
+  height: 35px
+  display: inline-block
+  text-align: center
+  line-height: 35px
+  vertical-align: middle
+  margin-left: 10px
+  color: $breadcrubsColor
+  border: 1px solid $backgroundSubscr
+
+.product-sort-view__a.active
+  color: $background
+  background: $white
+  border: 1px solid $borderColor3
+
 
 /* ----- PRODUCT-LIST -----*/
 .product-list, .product-sort
@@ -166,3 +201,9 @@
 
 .home-product-item
     margin-bottom: 20px
+
+.product-list.list .home-product-item
+  width: 100%
+
+.product-list.list .home-product-item-img
+  float: left
