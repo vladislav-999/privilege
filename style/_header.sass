@@ -1,0 +1,132 @@
+
+
+header
+    overflow: hidden
+    z-index: 2
+    position: relative
+
+.top-nav
+    overflow: hidden
+    padding: 10px 0
+    background: $background
+    font-family: $fontfamilyLL
+    font-size: 14px
+
+.language-block, .currency-block
+    float: left
+    position: relative
+
+.language-block:after, .currency-block:after
+    content: "\f2f9"
+    font-family: 'Material-Design-Iconic-Font'
+    font-size: 22px
+    background: $background
+    position: absolute
+    width: 18px
+    height: 18px
+    right: 10px
+    top: 0
+    color: $fontColor
+    text-align: center
+    vertical-align: middle
+    line-height: 18px
+
+.language-block
+    padding-right: 15px
+    border-right: 1px solid $borderColor
+
+.currency-block
+    padding-left: 15px
+    padding-right: 15px
+
+.language-block__select, .currency-block__select
+    border: none
+    background: $background
+    color: $fontColor
+    outline: none
+    cursor: pointer
+
+.header-buttons a
+    padding: 0 15px
+    text-decoration: none
+    color: $fontColor
+    border-right: 1px solid $borderColor
+
+
+.header-buttons a:last-child
+    padding-right: 0
+    border-right: none
+
+.header-buttons a i
+    margin-right: 10px
+    font-size: 20px
+    vertical-align: middle
+
+.header-menu
+    padding: 25px 0
+    background: rgba(255, 255, 255, 0.9)
+
+.header-menu .row
+    display: flex
+    justify-content: space-between
+
+.header-logo a
+    font-size: 22px
+    font-family: 'Audrey-Normal'
+    text-transform: uppercase
+    text-decoration: none
+    color: $background
+
+.header-menu_menu ul
+    padding: 0
+    margin: 0
+
+.header-menu_menu ul li
+    list-style: none
+    display: inline-block
+
+
+.header-menu_menu ul li a
+    text-transform: uppercase
+    font-size: 16px
+    text-decoration: none
+    color: $background
+    padding: 20px
+    font-family: $fontfamilyLL
+    position: relative
+
+.header-menu_menu ul li a.select:before
+    content: ''
+    height: 1px
+    width: calc(100% - 40px)
+    background: $background
+    position: absolute
+    bottom: 15px
+
+.header-menu_menu ul li a.bold
+    font-family: $fontfamilyLR
+
+.header-rightButtons a
+    padding: 20px
+    position: relative
+
+.header-rightButtons a i
+    font-size: 20px
+    color: #333
+
+.header-rightButtons a span.count
+    position: absolute
+    top: 5px
+    right: -15px
+    background: #ccb48e
+    height: 20px
+    width: 20px
+    color: #fff
+    border-radius: 50%
+    text-align: center
+    vertical-align: middle
+    line-height: 20px
+    font-family: $fontfamilyLL
+    font-size: 14px
+
+
