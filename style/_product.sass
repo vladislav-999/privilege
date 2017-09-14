@@ -219,7 +219,12 @@
   vertical-align: middle
   font-size: 18px
   border: 1px solid $borderColor3
+  transition: $transition
 
+.product-cart-follow a:hover
+  background: $breadcrubsColor
+  color: $white
+  border-color: $breadcrubsColor
 
 .product-cart-follow a:first-child
   margin-left: 15px
@@ -349,6 +354,9 @@
 
 .product-page-review-add-review-rating label:hover .zmdi-star-outline:before
     content: '\f27d'
+
+.product-page-review-add-review-rating input:checked + label .zmdi-star-outline:before
+  content: '\f27d'
 
 .product-page-review-add-review__submit
   padding: 15px 20px

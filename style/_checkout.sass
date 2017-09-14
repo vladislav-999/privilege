@@ -15,6 +15,8 @@
   padding-right: 10px
   box-sizing: border-box
   float: left
+  margin-left: -10px
+  margin-right: -10px
 
 .checkout-sub-title
   color: $background
@@ -22,6 +24,8 @@
   font-family: $fontfamilyLL
   text-transform: uppercase
   margin-bottom: 30px
+  margin-left: 10px
+  margin-right: 10px
 
 .checkout-payment
   width: 50%
@@ -30,7 +34,7 @@
   float: left
 
 .checkout-billing__input
-  width: 100%
+  width: calc(100% - 20px)
   padding: 15px
   box-sizing: border-box
   border: 1px solid $borderColor3
@@ -38,18 +42,15 @@
   font-size: 14px
   font-family: $fontfamilyLL
   float: left
-
-.checkout-billing__input.small
-  width: calc(50% - 10px)
+  margin-left: 10px
   margin-right: 10px
 
-.checkout-billing__input.small:nth-child(2n)
-  width: calc(50% - 10px)
-  margin-left: 10px
-  margin-right: 0
+.checkout-billing__input.small
+  width: calc(50% - 20px)
+
 
 .checkout-billing__textarea
-  width: 100%
+  width: calc(100% - 20px)
   height: 119px
   padding: 15px
   box-sizing: border-box
@@ -58,6 +59,8 @@
   font-size: 14px
   font-family: $fontfamilyLL
   resize: none
+  margin-left: 10px
+  margin-right: 10px
 
 .checkout-price__span:after
   content: " ...................................................."
