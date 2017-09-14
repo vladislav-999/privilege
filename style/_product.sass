@@ -1,3 +1,5 @@
+
+
 .product-page-title
   border-bottom: 1px solid $borderColor2
   padding: 15px 0
@@ -222,5 +224,140 @@
 .product-cart-follow a:first-child
   margin-left: 15px
 
-.mb-80
-  margin-bottom: 80px
+.product-page-description-tabs__ul
+  padding-left: 0
+  list-style: none
+  border-bottom: 1px solid $borderColor2
+  padding-bottom: 5px
+
+.product-page-description-tabs__ul li
+  display: inline-block
+
+.product-page-description-tabs__ul li a
+  font-size: 16px
+  text-decoration: none
+  color: $breadcrubsColor
+  margin-right: 40px
+  font-family: $fontfamilyLL
+  position: relative
+
+.product-page-description-tabs__ul li a.active
+  color: $background
+
+.product-page-description-tabs__ul li a.active:after
+  content: ''
+  width: 100%
+  height: 1px
+  background: $background
+  position: absolute
+  left: 0
+  bottom: -7px
+
+.product-page-description-content-title
+  margin: 30px 0
+  color: $background
+  font-size: 20px
+  text-transform: uppercase
+  font-family: $fontfamilyLL
+
+.product-page-description-content > div
+  display: none
+
+.product-page-description-content > div.active
+  display: block
+
+.product-page-review-item
+  padding: 20px
+  border: 1px solid $borderColor3
+  margin-bottom: 20px
+
+.product-page-review-item-img
+  float: left
+  margin-right: 20px
+
+.product-page-review-autor-name
+  color: $background
+  font-size: 14px
+  text-decoration: none
+  margin-right: 10px
+  font-family: $fontfamilyLR
+
+.product-page-review-data
+  color: $breadcrubsColor
+  font-family: $fontfamilyLL
+
+.product-page-review-item-desc
+  color: $background
+  font-family: $fontfamilyLL
+  font-size: 14px
+  width: calc(100% - 245px)
+  float: left
+
+.product-page-review-add-review-input-fields
+  width: 50%
+  float: left
+  padding-right: 10px
+  box-sizing: border-box
+
+.product-page-review-add-review-input-fields input
+  width: 100%
+  padding: 15px
+  box-sizing: border-box
+  border: 1px solid $borderColor3
+  margin-bottom: 20px
+  font-size: 14px
+  font-family: $fontfamilyLL
+
+.product-page-review-add-review-area-fields
+  width: 50%
+  float: left
+  padding-left: 10px
+  box-sizing: border-box
+
+.product-page-review-add-review-area-fields textarea
+  width: 100%
+  height: 119px
+  padding: 15px
+  box-sizing: border-box
+  font-size: 14px
+  border: 1px solid $borderColor3
+  font-family: $fontfamilyLL
+  resize: none
+
+.product-page-review-add-review-title
+  margin: 50px 0 30px 0
+  text-transform: uppercase
+  font-size: 20px
+  color: $background
+  font-family: $fontfamilyLL
+
+.product-page-review-add-review-rating
+  color: #8c8c8c
+  font-size: 14px
+  margin: 15px 0
+  font-family: $fontfamilyLL
+
+.product-page-review-add-review-rating input
+  display: none
+
+.product-page-review-add-review-rating label
+  margin: 0 20px
+  font-size: 20px
+  color: $add-review-color
+  cursor: pointer
+  vertical-align: middle
+
+.product-page-review-add-review-rating label:hover .zmdi-star-outline:before
+    content: '\f27d'
+
+.product-page-review-add-review__submit
+  padding: 15px 20px
+  border: none
+  background: $fontColor
+  font-size: 12px
+  color: #fff
+  text-transform: uppercase
+  cursor: pointer
+  width: 120px
+  box-sizing: border-box
+  font-family: $fontfamilyLR
