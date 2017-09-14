@@ -28,4 +28,8 @@ $(document).ready(function(){
         }
     });
 
+    $('.pagination a.active').click(function(e){
+        e.preventDefault();
+    });
+
 });

@@ -586,6 +586,30 @@ ul.footer-menu-category__slvlul a {
 .product-list.list .home-product-item-img {
   float: left; }
 
+.pagination {
+  width: auto;
+  text-align: center;
+  padding-top: 20px;
+  margin-top: 40px;
+  margin-bottom: 100px;
+  border-top: 1px solid #e5e5e5; }
+
+.pagination a {
+  display: inline-block;
+  border: 1px solid #e5e5e5;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  color: #8c8c8c;
+  margin-right: 10px;
+  text-decoration: none;
+  font-family: "Lato-Regular"; }
+
+.pagination a.active {
+  background: #333;
+  color: #ccb48e;
+  border: 1px solid #333; }
+
 .product-page-title {
   border-bottom: 1px solid #e8e8e8;
   padding: 15px 0;
