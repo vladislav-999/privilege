@@ -1,0 +1,139 @@
+.checkout
+  margin-bottom: 100px
+
+.checkout-title
+  border-bottom: 1px solid $borderColor2
+  padding: 15px 0
+  margin: 30px 0
+  color: $background
+  font-family: $fontfamilyLL
+  font-size: 22px
+  font-weight: normal
+
+.checkout-billing
+  width: 50%
+  padding-right: 10px
+  box-sizing: border-box
+  float: left
+
+.checkout-sub-title
+  color: $background
+  font-size: 20px
+  font-family: $fontfamilyLL
+  text-transform: uppercase
+  margin-bottom: 30px
+
+.checkout-payment
+  width: 50%
+  padding-left: 10px
+  box-sizing: border-box
+  float: left
+
+.checkout-billing__input
+  width: 100%
+  padding: 15px
+  box-sizing: border-box
+  border: 1px solid $borderColor3
+  margin-bottom: 20px
+  font-size: 14px
+  font-family: $fontfamilyLL
+  float: left
+
+.checkout-billing__input.small
+  width: calc(50% - 10px)
+  margin-right: 10px
+
+.checkout-billing__input.small:nth-child(2n)
+  width: calc(50% - 10px)
+  margin-left: 10px
+  margin-right: 0
+
+.checkout-billing__textarea
+  width: 100%
+  height: 119px
+  padding: 15px
+  box-sizing: border-box
+  border: 1px solid $borderColor3
+  margin-bottom: 20px
+  font-size: 14px
+  font-family: $fontfamilyLL
+  resize: none
+
+.checkout-price__span:after
+  content: " ...................................................."
+  white-space: pre
+
+.checkout-price__span
+  width: 200px
+  overflow: hidden
+  display: inline-flex
+  line-height: 2
+
+.checkout-links-accept
+  float: left
+
+.checkout-links-accept a
+  display: inline-block
+  background: $white
+  height: 40px
+  width: 70px
+  text-align: center
+  vertical-align: middle
+  line-height: 35px
+  border: 1px solid $borderColor3
+
+.checkout-links-accept a img
+  vertical-align: middle
+
+.checkout__button
+  padding: 15px 50px
+  border: none
+  background: #ccb48e
+  font-size: 12px
+  color: #fff
+  text-transform: uppercase
+  cursor: pointer
+  box-sizing: border-box
+  margin-top: 15px
+
+.checkout-payment-radio-buttons
+  padding-bottom: 20px
+  border-bottom: 1px solid $borderColor2
+
+.checkout-payment-radio-buttons__input
+  display: none
+
+.checkout-payment-radio-buttons__label
+  display: block
+  padding: 15px 0
+  color: #8c8c8c
+  font-family: $fontfamilyLL
+  font-size: 14px
+  padding-left: 30px
+  position: relative
+  cursor: pointer
+
+.checkout-payment-radio-buttons__label:before
+  content: '\f26c'
+  font-family: 'Material-Design-Iconic-Font'
+  position: absolute
+  left: 0
+  bottom: 14px
+  font-size: 16px
+
+.checkout-payment-radio-buttons__input:checked + label
+  color: $background
+
+.checkout-payment-radio-buttons__input:checked + label::before
+  content: '\f26f'
+
+.checkout-payment-radio-buttons__label.last
+  float: left
+  margin-right: 20px
+
+.checkout-price
+  margin-top: 20px
+  color: #8c8c8c
+  text-transform: uppercase
+  font-size: 16px
+  font-family: $fontfamilyLR
