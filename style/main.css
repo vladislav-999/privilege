@@ -15,7 +15,6 @@ button, input[type=text], textarea, select, label, a, img {
   outline: none; }
 
 header {
-  overflow: hidden;
   z-index: 2;
   position: relative; }
 
@@ -79,7 +78,8 @@ header {
 
 .header-menu {
   padding: 25px 0;
-  background: rgba(255, 255, 255, 0.9); }
+  background: rgba(255, 255, 255, 0.9);
+  overflow: visible !important; }
 
 .header-menu .row {
   display: flex;
@@ -92,6 +92,9 @@ header {
   text-decoration: none;
   color: #333; }
 
+.header-menu_menu {
+  position: relative; }
+
 .header-menu_menu ul {
   padding: 0;
   margin: 0; }
@@ -100,6 +103,47 @@ header {
   list-style: none;
   display: inline-block; }
 
+.header-menu_sub-menu {
+  display: none;
+  left: 0;
+  position: absolute;
+  width: 1000px;
+  background: #fff;
+  top: 60px;
+  justify-content: space-between;
+  text-transform: uppercase; }
+
+.header-menu_sub-menu-items {
+  width: 600px;
+  padding: 30px 20px;
+  color: #333; }
+
+ul.header-menu_sub-menu-items__ul {
+  column-count: 2;
+  font-family: "Lato-Light"; }
+
+.header-menu_menu li.header-menu_sub-menu-items__li-category {
+  width: 100%;
+  float: left;
+  margin-bottom: 20px; }
+
+.header-menu_menu li.header-menu_sub-menu-items__li-category:nth-child(2n) {
+  padding-top: 30px;
+  border-top: 1px solid #e5e5e5;
+  margin-right: 20px;
+  box-sizing: border-box; }
+
+.header-menu_menu li.header-menu_sub-menu-items__li-item {
+  display: block; }
+
+.header-menu_menu li.header-menu_sub-menu-items__li-item a {
+  text-transform: none;
+  color: #8c8c8c;
+  line-height: 30px; }
+
+.header-menu_menu ul li:hover .header-menu_sub-menu {
+  display: flex; }
+
 .header-menu_menu ul li a {
   text-transform: uppercase;
   font-size: 16px;
@@ -107,7 +151,23 @@ header {
   color: #333;
   padding: 20px;
   font-family: "Lato-Light";
-  position: relative; }
+  position: relative;
+  transition: all 0.5s; }
+
+.header-menu_menu ul li a:before {
+  content: "";
+  transition: all 0.5s; }
+
+.header-menu_menu ul li a:hover {
+  color: #ccb48e; }
+
+.header-menu_menu ul li a:hover:before {
+  content: "";
+  height: 1px;
+  width: calc(100% - 40px);
+  background: #ccb48e;
+  position: absolute;
+  bottom: 15px; }
 
 .header-menu_menu ul li a.select:before {
   content: "";
@@ -245,93 +305,6 @@ header {
   position: relative;
   padding: 20px; }
 
-/* -------------------------- */
-.home-product-item {
-  float: left;
-  text-align: center;
-  font-family: "Lato-Regular";
-  color: #333;
-  text-decoration: none;
-  margin: 0 10px;
-  border: 2px solid #fff;
-  padding-bottom: 20px;
-  transition: all 0.5s; }
-
-.home-product-item a {
-  color: #333;
-  text-decoration: none; }
-
-.home-product-item-img {
-  width: 273px;
-  height: 273px;
-  text-align: center;
-  border: 1px solid #e5e5e5;
-  line-height: 273px;
-  position: relative;
-  overflow: hidden;
-  transition: all 0.5s; }
-
-.home-product-item-img img {
-  vertical-align: bottom;
-  max-height: 100%; }
-
-.home-product-item-title {
-  padding: 10px;
-  font-size: 14px; }
-
-.home-product-item-price {
-  padding: 10px;
-  padding-top: 0;
-  font-size: 18px; }
-
-.home-product-item-price .old-price {
-  font-family: "Lato-Light";
-  color: #333;
-  font-size: 14px;
-  margin-right: 20px;
-  text-decoration: line-through; }
-
-.home-product-item__button {
-  padding: 15px 20px;
-  border: none;
-  background: #ccb48e;
-  font-size: 12px;
-  color: #fff;
-  text-transform: uppercase;
-  cursor: pointer; }
-
-.home-product-item-img-badge {
-  position: absolute;
-  height: 100px;
-  line-height: 170px;
-  width: 100px;
-  background: #f6f4f0;
-  vertical-align: bottom;
-  right: -50px;
-  top: -50px;
-  transform: rotate(45deg);
-  text-transform: uppercase;
-  color: #ccb48e; }
-
-.home-product-review-raiting {
-  display: none;
-  position: absolute;
-  width: 100%;
-  bottom: 0;
-  line-height: 40px;
-  background: rgba(204, 180, 142, 0.9);
-  transition: all 0.5s; }
-
-.home-product-item:hover {
-  border-color: #ccb48e; }
-
-.home-product-item:hover .home-product-item-img {
-  border: 1px solid #ccb48e; }
-
-.home-product-item:hover .home-product-review-raiting {
-  display: block; }
-
-/* -------------------------- */
 .home-brand-container {
   display: flex;
   justify-content: space-between;
@@ -520,7 +493,11 @@ ul.footer-menu-category__slvlul a {
 .subcategory__ul a {
   text-decoration: none;
   color: #8c8c8c;
-  line-height: 30px; }
+  line-height: 30px;
+  transition: all 0.5s; }
+
+.subcategory__ul a:hover {
+  color: #333; }
 
 .subcategory__ul li.active, .subcategory__ul li.active a {
   color: #333; }

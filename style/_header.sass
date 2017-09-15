@@ -3,7 +3,6 @@ button, input[type=text], textarea, select, label, a, img
     outline: none
 
 header
-    overflow: hidden
     z-index: 2
     position: relative
 
@@ -69,6 +68,7 @@ header
 .header-menu
     padding: 25px 0
     background: rgba(255, 255, 255, 0.9)
+    overflow: visible !important
 
 .header-menu .row
     display: flex
@@ -81,6 +81,9 @@ header
     text-decoration: none
     color: $background
 
+.header-menu_menu
+    position: relative
+
 .header-menu_menu ul
     padding: 0
     margin: 0
@@ -89,6 +92,46 @@ header
     list-style: none
     display: inline-block
 
+.header-menu_sub-menu
+    display: none
+    left: 0
+    position: absolute
+    width: 1000px
+    background: $white
+    top: 60px
+    justify-content: space-between
+    text-transform: uppercase
+
+.header-menu_sub-menu-items
+    width: 600px
+    padding: 30px 20px
+    color: $background
+
+ul.header-menu_sub-menu-items__ul
+    column-count: 2
+    font-family: $fontfamilyLL
+
+.header-menu_menu li.header-menu_sub-menu-items__li-category
+    width: 100%
+    float: left
+    margin-bottom: 20px
+
+.header-menu_menu li.header-menu_sub-menu-items__li-category:nth-child(2n)
+    padding-top: 30px
+    border-top: 1px solid $borderColor3
+    margin-right: 20px
+    box-sizing: border-box
+
+.header-menu_menu li.header-menu_sub-menu-items__li-item
+    display: block
+
+.header-menu_menu li.header-menu_sub-menu-items__li-item a
+    text-transform: none
+    color: $breadcrubsColor
+    line-height: 30px
+
+.header-menu_menu ul li:hover .header-menu_sub-menu
+    display: flex
 
 .header-menu_menu ul li a
     text-transform: uppercase
@@ -98,6 +141,22 @@ header
     padding: 20px
     font-family: $fontfamilyLL
     position: relative
+    transition: $transition
+
+.header-menu_menu ul li a:before
+    content: ''
+    transition: $transition
+
+.header-menu_menu ul li a:hover
+    color: $fontColor
+
+.header-menu_menu ul li a:hover:before
+    content: ''
+    height: 1px
+    width: calc(100% - 40px)
+    background: $fontColor
+    position: absolute
+    bottom: 15px
 
 .header-menu_menu ul li a.select:before
     content: ''
@@ -109,6 +168,9 @@ header
 
 .header-menu_menu ul li a.bold
     font-family: $fontfamilyLR
+
+
+
 
 .header-rightButtons a
     padding: 20px
