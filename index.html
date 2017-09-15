@@ -489,7 +489,7 @@
 
 
     <!------- STYLES ------->
-    <link rel="stylesheet" href="./style/main.css">
+    <!--<link rel="stylesheet" href="./style/main.css">-->
     <link rel="stylesheet" href="./style/owl.carousel.min.css">
     <link rel="stylesheet" href="./style/material-design-iconic-font.css">
 
@@ -498,6 +498,11 @@
     <script src="./scripts/jquery-3.2.1.min.js"></script>
     <script src="./scripts/owl.carousel.min.js"></script>
     <script src="./scripts/scripts.js"></script>
+    <script>
+        $(document).ready(function() {
+            $("head").append("<link rel='stylesheet' type='text/css' href='./style/main.css' />");
+        });
+    </script>
 
 </body>
 </html>
