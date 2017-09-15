@@ -103,20 +103,23 @@
     position: relative
     padding: 20px
 
+
+/* -------------------------- */
+
 .home-product-item
     float: left
     text-align: center
     font-family: $fontfamilyLR
     color: $background
     text-decoration: none
-    margin-right: 20px
+    margin: 0 10px
+    border: 2px solid $white
+    padding-bottom: 20px
+    transition: $transition
 
 .home-product-item a
     color: $background
     text-decoration: none
-
-.home-product-item:nth-child(5n)
-    margin-right: 0
 
 .home-product-item-img
     width: 273px
@@ -126,6 +129,7 @@
     line-height: 273px
     position: relative
     overflow: hidden
+    transition: $transition
 
 .home-product-item-img img
     vertical-align: bottom
@@ -167,7 +171,31 @@
     top: -50px
     transform: rotate(45deg)
     text-transform: uppercase
-    color: #ccb48e
+    color: $fontColor
+
+.home-product-review-raiting
+    display: none
+    position: absolute
+    width: 100%
+    bottom: 0
+    line-height: 40px
+    background: rgba(204, 180, 142, 0.9)
+    transition: $transition
+
+.home-product-item:hover
+    border-color: $fontColor
+
+.home-product-item:hover .home-product-item-img
+    border: 1px solid $fontColor
+
+
+.home-product-item:hover .home-product-review-raiting
+    display: block
+
+
+
+/* -------------------------- */
+
 
 .home-brand-container
     display: flex
