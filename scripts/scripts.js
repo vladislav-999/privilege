@@ -8,9 +8,6 @@ $(document).ready(function(){
         items: 1,
         nav: true
     });
-    $('.product-small-image').owlCarousel({
-        items: 3
-    });
 
     $('a.product-sort-view__a').click(function(){
         if(!$(this).hasClass('active')){
