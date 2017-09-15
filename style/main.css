@@ -11,6 +11,9 @@
 @font-face {
   font-family: "Audrey-Normal";
   src: url(../fonts/Audrey-Normal.otf); }
+button, input[type=text], textarea, select, label, a, img {
+  outline: none; }
+
 header {
   overflow: hidden;
   z-index: 2;
@@ -152,7 +155,7 @@ header {
   list-style: none;
   width: 100%; }
 
-.owl-prev, .owl-next {
+.slick-next, .slick-prev {
   position: absolute;
   top: 50%;
   width: 50px;
@@ -161,28 +164,44 @@ header {
   font-size: 0;
   text-align: center;
   vertical-align: middle;
-  line-height: 50px; }
+  line-height: 50px;
+  z-index: 1;
+  border: none;
+  cursor: pointer; }
 
-.owl-prev {
+.slick-prev {
   left: 10px; }
 
-.owl-prev:before {
+.slick-prev:before {
   content: "";
   font-family: "Material-Design-Iconic-Font";
   font-size: 45px;
   color: #e4e2de; }
 
-.owl-next {
+.slick-next {
   right: 10px; }
 
-.owl-next:before {
+.slick-next:before {
   content: "";
   font-family: "Material-Design-Iconic-Font";
   font-size: 45px;
   color: #e4e2de; }
 
-.owl-prev:hover, .owl-next:hover {
+.slick-prev:hover, .slick-next:hover {
   background: rgba(51, 51, 51, 0.8); }
+
+.product-small-image .slick-next, .product-small-image .slick-prev {
+  top: calc(50% - 30px);
+  background: none; }
+
+.product-small-image .slick-next:hover:before, .product-small-image .slick-prev:hover:before {
+  color: #333; }
+
+.product-small-image .slick-prev {
+  left: 0; }
+
+.product-small-image .slick-next {
+  right: 0; }
 
 .promo {
   display: flex;
@@ -678,10 +697,14 @@ ul.footer-menu-category__slvlul a {
   position: relative; }
 
 .product-small-image a {
-  width: 90%;
+  width: 30%;
   text-align: center;
   float: left;
-  border: 1px solid #e5e5e5; }
+  border: 1px solid #e5e5e5;
+  margin: 0 10px; }
+
+.product-small-image a img {
+  margin: 0 auto; }
 
 .product-small-image a.active {
   border: 1px solid #ccb48e; }

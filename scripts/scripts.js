@@ -1,12 +1,22 @@
 /**
  * Created by Vladislav_PC on 12.09.2017.
  */
+
+
+
 $(document).ready(function(){
 
+    $(window).on('load', function () {
+        var $preloader = $('#page-preloader'),
+            $spinner   = $preloader.find('.spinner');
+        $spinner.fadeOut();
+        $preloader.delay(350).fadeOut('slow');
+    });
 
-    $('.owl-carousel').owlCarousel({
-        items: 1,
-        nav: true
+    $('.owl-carousel').slick();
+
+    $('.product-small-image').slick({
+        slidesToShow: 3
     });
 
     $('a.product-sort-view__a').click(function(){

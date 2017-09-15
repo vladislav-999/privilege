@@ -11,7 +11,7 @@
     list-style: none
     width: 100%
 
-.owl-prev, .owl-next
+.slick-next, .slick-prev
     position: absolute
     top: 50%
     width: 50px
@@ -21,27 +21,45 @@
     text-align: center
     vertical-align: middle
     line-height: 50px
+    z-index: 1
+    border: none
+    cursor: pointer
 
-.owl-prev
+.slick-prev
     left: 10px
 
-.owl-prev:before
+.slick-prev:before
     content: '\f2fa'
     font-family: 'Material-Design-Iconic-Font'
     font-size: 45px
     color: #e4e2de
 
-.owl-next
+.slick-next
     right: 10px
 
-.owl-next:before
+.slick-next:before
     content: '\f2fb'
     font-family: 'Material-Design-Iconic-Font'
     font-size: 45px
     color: #e4e2de
 
-.owl-prev:hover, .owl-next:hover
+.slick-prev:hover, .slick-next:hover
     background: rgba(51, 51, 51, 0.8)
+
+
+.product-small-image .slick-next, .product-small-image .slick-prev
+    top: calc(50% - 30px)
+    background: none
+
+.product-small-image .slick-next:hover:before, .product-small-image .slick-prev:hover:before
+    color: $background
+
+.product-small-image .slick-prev
+    left: 0
+
+.product-small-image .slick-next
+    right: 0
+
 
 .promo
     display: flex
