@@ -3,10 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
-    <link rel='stylesheet' type='text/css' href='./style/preloader.css' />
+
+    <!-- STYLES -->
+    <link rel="stylesheet" href="./style/main.css">
+    <link rel="stylesheet" href="./style/owl.carousel.min.css">
+    <link rel="stylesheet" href="./style/material-design-iconic-font.css">
+    <link rel="stylesheet" href="./style/jquery.fancybox.min.css">
 </head>
 <body>
-    <div id="page-preloader"><span class="spinner"></span></div>
 
     <!-- HEADER -->
     <header>
@@ -419,11 +423,6 @@
     <!-- FOOTER-END -->
 
 
-    <!-- STYLES -->
-    <!--<link rel="stylesheet" href="./style/main.css">
-    <link rel="stylesheet" href="./style/owl.carousel.min.css">
-    <link rel="stylesheet" href="./style/material-design-iconic-font.css">
-    <link rel="stylesheet" href="./style/jquery.fancybox.min.css"> -->
 
 
     <!-- SCRIPTS -->
@@ -431,12 +430,6 @@
     <script src="./scripts/slick.min.js"></script>
     <script src="./scripts/jquery.fancybox.min.js"></script>
     <script>
-
-        $("head").append("<link rel='stylesheet' type='text/css' href='./style/main.css' />");
-        $("head").append("<link rel='stylesheet' type='text/css' href='./style/slick.css' />");
-        $("head").append("<link rel='stylesheet' type='text/css' href='./style/material-design-iconic-font.css' />");
-        $("head").append("<link rel='stylesheet' type='text/css' href='./style/jquery.fancybox.min.css' />");
-
         $(document).ready(function(){
 
             $("[data-fancybox]").fancybox({

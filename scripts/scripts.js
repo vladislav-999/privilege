@@ -6,12 +6,6 @@
 
 $(document).ready(function(){
 
-    $(window).on('load', function () {
-        var $preloader = $('#page-preloader'),
-            $spinner   = $preloader.find('.spinner');
-        $spinner.delay(300).fadeOut('slow');
-        $preloader.delay(350).fadeOut('slow');
-    });
 
     $('.owl-carousel').slick();
 
