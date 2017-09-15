@@ -26,14 +26,24 @@
   display: flex
   justify-content: space-between
   margin-top: 20px
+  overflow: hidden
+  position: relative
 
 .product-small-image a
-  width: 30%
+  width: 90%
   text-align: center
+  float: left
   border: 1px solid $borderColor3
+
 
 .product-small-image a.active
   border: 1px solid $fontColor
+
+.product-small-image .owl-item
+  float: left
+
+.product-small-image .owl-nav.disabled
+  display: none
 
 .product-cart
   width: 50%

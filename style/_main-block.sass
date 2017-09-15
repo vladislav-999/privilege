@@ -1,5 +1,4 @@
 
-
 .slider .owl-carousel
     padding: 0
     margin: 0
@@ -11,6 +10,38 @@
 .slider .owl-carousel li
     list-style: none
     width: 100%
+
+.owl-prev, .owl-next
+    position: absolute
+    top: 50%
+    width: 50px
+    height: 50px
+    background: rgba(51, 51, 51, 0.5)
+    font-size: 0
+    text-align: center
+    vertical-align: middle
+    line-height: 50px
+
+.owl-prev
+    left: 10px
+
+.owl-prev:before
+    content: '\f2fa'
+    font-family: 'Material-Design-Iconic-Font'
+    font-size: 45px
+    color: #e4e2de
+
+.owl-next
+    right: 10px
+
+.owl-next:before
+    content: '\f2fb'
+    font-family: 'Material-Design-Iconic-Font'
+    font-size: 45px
+    color: #e4e2de
+
+.owl-prev:hover, .owl-next:hover
+    background: rgba(51, 51, 51, 0.8)
 
 .promo
     display: flex
