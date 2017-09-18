@@ -95,12 +95,29 @@ header
 .header-menu_sub-menu
     display: none
     left: 0
-    position: absolute
+    position: relative
     width: 1000px
     background: $white
-    top: 60px
+    top: 40px
     justify-content: space-between
     text-transform: uppercase
+    margin-bottom: 20px
+
+.header-menu_sub-menu-wrapper
+    left: 0
+    position: absolute
+    width: 1000px
+    height: auto
+    display: none
+
+a.header-menu_sub-menu-view-all
+    background: $background
+    width: 100%
+    display: block
+    color: $fontColor !important
+    text-align: center
+    box-sizing: border-box
+
 
 .header-menu_sub-menu-items
     width: 600px
@@ -128,10 +145,21 @@ ul.header-menu_sub-menu-items__ul
 .header-menu_menu li.header-menu_sub-menu-items__li-item a
     text-transform: none
     color: $breadcrubsColor
-    line-height: 30px
+    line-height: 1
+    display: inline-block
+    padding: 10px 20px
+
+.header-menu_menu li.header-menu_sub-menu-items__li-item a:hover
+    color: $background
+
+.header-menu_menu li.header-menu_sub-menu-items__li-item a:hover:before
+    display: none
 
 .header-menu_menu ul li:hover .header-menu_sub-menu
     display: flex
+
+.header-menu_menu ul li:hover .header-menu_sub-menu-wrapper
+    display: block
 
 .header-menu_menu ul li a
     text-transform: uppercase
@@ -143,14 +171,14 @@ ul.header-menu_sub-menu-items__ul
     position: relative
     transition: $transition
 
-.header-menu_menu ul li a:before
+.header-menu_menu ul li a.header-menu_menu__a:before
     content: ''
     transition: $transition
 
 .header-menu_menu ul li a:hover
     color: $fontColor
 
-.header-menu_menu ul li a:hover:before
+.header-menu_menu ul li a.header-menu_menu__a:hover:before
     content: ''
     height: 1px
     width: calc(100% - 40px)
@@ -169,8 +197,8 @@ ul.header-menu_sub-menu-items__ul
 .header-menu_menu ul li a.bold
     font-family: $fontfamilyLR
 
-
-
+.header-rightButtons
+    position: relative
 
 .header-rightButtons a
     padding: 20px
@@ -195,4 +223,36 @@ ul.header-menu_sub-menu-items__ul
     font-family: $fontfamilyLL
     font-size: 14px
 
+.header-rightButtons-search
+    position: relative
+    width: 200px
+    display: inline-block
+    top: -24px
 
+.header-rightButtons-search__input
+    position: absolute
+    right: 0
+    height: 30px
+    background: none
+    border: none
+    padding: 0 15px
+    font-size: 0
+
+.header-rightButtons-search__input:focus
+    background: $white
+    border: 2px solid $fontColor
+    font-size: 14px
+
+.header-rightButtons-search i
+    position: absolute
+    right: 10px
+    font-size: 20px
+    top: 7px
+
+.header-rightButtons-search__input::-webkit-input-placeholder
+    font-size: 0
+    color: $breadcrubsColor
+    font-family: $fontfamilyLL
+
+.header-rightButtons-search__input:focus::-webkit-input-placeholder
+    font-size: 14px

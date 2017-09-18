@@ -37,4 +37,18 @@ $(document).ready(function(){
         e.preventDefault();
     });
 
+    $('a.popup').click(function(e){
+        e.preventDefault();
+
+       var id = $(this).attr('href');
+       console.log(id);
+
+       if($(id).hasClass('active')){
+           $(id).removeClass('active');
+       }else{
+           $(id).addClass('active');
+       }
+
+    });
+
 });
