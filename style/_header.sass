@@ -142,18 +142,29 @@ ul.header-menu_sub-menu-items__ul
 .header-menu_menu li.header-menu_sub-menu-items__li-item
     display: block
 
+.header-menu_menu li.header-menu_sub-menu-items__li-item a:before
+    content: ''
+    width: 5px
+    height: 5px
+    background: #8c8c8c
+    position: absolute
+    top: 15px
+    left: 5px
+    transition: $transition
+
 .header-menu_menu li.header-menu_sub-menu-items__li-item a
     text-transform: none
     color: $breadcrubsColor
     line-height: 1
     display: inline-block
     padding: 10px 20px
+    position: relative
 
 .header-menu_menu li.header-menu_sub-menu-items__li-item a:hover
     color: $background
 
 .header-menu_menu li.header-menu_sub-menu-items__li-item a:hover:before
-    display: none
+    background: $background
 
 .header-menu_menu ul li:hover .header-menu_sub-menu
     display: flex

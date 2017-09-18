@@ -38,6 +38,13 @@ input.subscribe-form__input
   box-sizing: border-box
   margin-left: -4px
   height: 47px
+  transition: $transition
+
+.subscribe-form__button:hover
+  color: $fontColor
+  background: $background
+  border-color: $background
+  cursor: pointer
 
 .footer-menu
   background: $background
@@ -68,6 +75,10 @@ ul.footer-menu-category__slvlul a
   font-size: 14px
   text-decoration: none
   line-height: 25px
+  transition: $transition
+
+ul.footer-menu-category__slvlul a:hover
+  text-decoration: underline
 
 .footer-menu-links
   display: flex
