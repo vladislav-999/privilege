@@ -190,7 +190,12 @@
   background: $white
   font-size: 20px
   border: 1px solid $borderColor3
+  transition: $transition
 
+.product-cart-buy-add-to-cart__favorite:hover, .product-cart-buy-add-to-cart__compare:hover
+  background: $background
+  color: $fontColor
+  border-color: $background
 
 .product-cart-buy-add-to-cart__button
   height: 40px
@@ -204,6 +209,11 @@
   background: $fontColor
   font-family: $fontfamilyLR
   cursor: pointer
+  transition: $transition
+
+.product-cart-buy-add-to-cart__button:hover
+  background: $background
+  color: $fontColor
 
 .product-cart-features
   margin: 40px 0
@@ -237,9 +247,9 @@
   transition: $transition
 
 .product-cart-follow a:hover
-  background: $breadcrubsColor
-  color: $white
-  border-color: $breadcrubsColor
+  background: $background
+  color: $fontColor
+  border-color: $background
 
 .product-cart-follow a:first-child
   margin-left: 15px
