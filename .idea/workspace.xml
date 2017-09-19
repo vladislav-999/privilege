@@ -3,9 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="5b045849-b310-44da-9b4e-f26f29de60a7" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/product.html" afterPath="$PROJECT_DIR$/product.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scripts/scripts.js" afterPath="$PROJECT_DIR$/scripts/scripts.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/style/_product.sass" afterPath="$PROJECT_DIR$/style/_product.sass" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/style/_checkout.sass" afterPath="$PROJECT_DIR$/style/_checkout.sass" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/style/main.css" afterPath="$PROJECT_DIR$/style/main.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/style/main.css.map" afterPath="$PROJECT_DIR$/style/main.css.map" />
     </list>
@@ -125,11 +123,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="_product.sass" pinned="false" current-in-tab="true">
+      <file leaf-file-name="_product.sass" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/style/_product.sass">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="433">
               <caret line="313" column="18" lean-forward="false" selection-start-line="313" selection-start-column="18" selection-end-line="313" selection-end-column="18" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="_checkout.sass" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/style/_checkout.sass">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="483">
+              <caret line="133" column="0" lean-forward="true" selection-start-line="133" selection-start-column="0" selection-end-line="133" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -140,16 +148,6 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="653">
               <caret line="132" column="14" lean-forward="false" selection-start-line="132" selection-start-column="14" selection-end-line="132" selection-end-column="14" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="main.sass" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/style/main.sass">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="310">
-              <caret line="27" column="4" lean-forward="false" selection-start-line="27" selection-start-column="4" selection-end-line="30" selection-end-column="16" />
               <folding />
             </state>
           </provider>
@@ -166,7 +164,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>header-menu_sub-menu-items__li-item</find>
       <find>.subscribe-form__button</find>
       <find>.filter-param__input:checked + label::before</find>
       <find>cart-popup-item-delete</find>
@@ -196,6 +193,7 @@
       <find>product-sort-view__a active</find>
       <find>description</find>
       <find>#description</find>
+      <find>product-page-descript</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -212,7 +210,6 @@
         <option value="$PROJECT_DIR$/style/main.sass" />
         <option value="$PROJECT_DIR$/style/_card_product.sass" />
         <option value="$PROJECT_DIR$/style/_variables.sass" />
-        <option value="$PROJECT_DIR$/style/_checkout.sass" />
         <option value="$PROJECT_DIR$/style/_footer.sass" />
         <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/style/_cart-popup.sass" />
@@ -224,6 +221,7 @@
         <option value="$PROJECT_DIR$/scripts/scripts.js" />
         <option value="$PROJECT_DIR$/product.html" />
         <option value="$PROJECT_DIR$/style/_product.sass" />
+        <option value="$PROJECT_DIR$/style/_checkout.sass" />
       </list>
     </option>
   </component>
@@ -399,15 +397,15 @@
       <workItem from="1505306588761" duration="147000" />
       <workItem from="1505306869435" duration="54762000" />
       <workItem from="1505478513179" duration="9450000" />
-      <workItem from="1505717081057" duration="38853000" />
+      <workItem from="1505717081057" duration="40149000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="103212000" />
+    <option name="totallyTimeSpent" value="104508000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="7" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.12434141" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -718,14 +716,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/style/_checkout.sass">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="501">
-          <caret line="100" column="25" lean-forward="false" selection-start-line="100" selection-start-column="25" selection-end-line="100" selection-end-column="25" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/style/_footer.sass">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="484">
@@ -880,6 +870,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="433">
           <caret line="313" column="18" lean-forward="false" selection-start-line="313" selection-start-column="18" selection-end-line="313" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/style/_checkout.sass">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="483">
+          <caret line="133" column="0" lean-forward="true" selection-start-line="133" selection-start-column="0" selection-end-line="133" selection-end-column="0" />
           <folding />
         </state>
       </provider>
