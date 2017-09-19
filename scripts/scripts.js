@@ -54,6 +54,32 @@ $(document).ready(function(){
 
     $('select').styler();
 
+    $('.product-page-description-tabs__ul a').click(function(){
+        var id = $(this).attr('href');
 
+        $('.product-page-description-tabs__ul a').removeClass('active');
+
+        $(this).addClass('active');
+
+        $('.product-page-description-content > div').removeClass('active');
+
+        $(id).addClass('active');
+    });
+
+    $(".product-cart-review").on("click","a", function (e) {
+        e.preventDefault();
+        if($('#reviews').hasClass('active') ){
+            var id  = $(this).attr('href'),
+                top = $(id).offset().top;
+            $('body,html').animate({scrollTop: top}, 1500);
+        }else{
+            $('#review-href').click();
+            var id  = $(this).attr('href'),
+                top = $(id).offset().top;
+            $('body,html').animate({scrollTop: top}, 1500);
+
+        }
+
+    });
 
 });

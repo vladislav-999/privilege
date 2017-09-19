@@ -984,6 +984,10 @@ ul.footer-menu-category__slvlul a:hover {
   text-transform: uppercase;
   font-family: "Lato-Light"; }
 
+.product-page-description-content-description {
+  font-family: "Lato-Light";
+  line-height: 1.5; }
+
 .product-page-description-content > div {
   display: none; }
 
