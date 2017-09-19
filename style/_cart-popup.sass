@@ -32,11 +32,15 @@
   padding-right: 10px
 
 .cart-popup-item
-  overflow: hidden
   padding-bottom: 20px
   margin-bottom: 20px
   border-bottom: 1px solid $cart-popup-color-2
   font-family: 'Lato-Light'
+
+.cart-popup-item:after
+  clear: both
+  display: table
+  content: " "
 
 .cart-popup-item-title
   width: calc(100% - 25px)
@@ -71,12 +75,11 @@
 
 .cart-popup-item-qty__select
   float: left
-  height: 32px
-  width: 60px
+  width: 75px
   color: $cart-popup-color-1
-  border: 1px solid $cart-popup-color-2
   box-sizing: border-box
-  padding: 0 5px
+  margin: 0
+
 
 .cart-popup-total
   display: flex

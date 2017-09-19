@@ -51,3 +51,116 @@
 ::-webkit-scrollbar-track:hover
   border-left: none
   background-color: #eee
+
+
+
+
+.top-nav .jq-selectbox__select
+  margin-top: -10px
+  margin-bottom: -10px
+  background: none
+  padding: 0 45px 0 20px
+  border: none
+  color: $fontColor
+
+.top-nav .jq-selectbox__dropdown
+  top: 20px !important
+
+.top-nav .jq-selectbox
+  z-index: 10
+
+.jq-selectbox
+  z-index: 1 !important
+
+.jq-selectbox__select
+  text-shadow: none
+  box-shadow: none
+  color: $breadcrubsColor
+  height: 41px
+  border-radius: 0px
+  vertical-align: middle
+  line-height: 41px
+  background: $white
+  border: 1px solid $borderColor3
+
+.jq-selectbox__select:hover, .jq-selectbox.dropdown.opened .jq-selectbox__select
+  background: $white
+  color: $background
+
+.jq-selectbox__select:active
+  box-shadow: none
+
+.jq-selectbox.opened
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 4px 5px
+
+.jq-selectbox__dropdown
+  border: none
+  border-radius: 0
+  box-shadow: 0 4px 5px rgba(0,0,0,.2)
+  top: 40px
+
+.jq-selectbox__dropdown ul
+  padding: 20px 0
+
+.top-nav .jq-selectbox li
+  padding: 5px 20px 6px
+
+.jq-selectbox li:hover, .jq-selectbox li.selected
+  background: none
+  color: $background
+  text-decoration: underline
+
+.jq-selectbox__trigger
+  border: none
+
+.jq-selectbox__trigger-arrow
+  top: 18px
+
+.top-nav .jq-selectbox.focused .jq-selectbox__select
+  border: none
+
+.jq-selectbox.focused .jq-selectbox__select
+  border: 1px solid $borderColor3
+
+.jq-selectbox.dropdown.opened .jq-selectbox__select
+  border: 1px solid $white
+
+
+.top-nav .jq-selectbox.focused .jq-selectbox__select
+  border: none
+
+.top-nav .jq-selectbox.dropdown.opened .jq-selectbox__select
+  border: none
+
+
+.jq-selectbox__trigger-arrow
+  border: none
+  background: url(../img/arrows.png) no-repeat
+  width: 10px
+  height: 10px
+
+.jq-selectbox__select:hover .jq-selectbox__trigger-arrow, .jq-selectbox.dropdown.opened .jq-selectbox__select  .jq-selectbox__trigger-arrow
+  background-position: -11px 0
+
+.jq-selectbox
+  margin: 0 10px
+
+.cart-popup-item-qty .jq-selectbox__select
+  height: 30px
+  line-height: 30px
+
+.cart-popup-item-qty .jq-selectbox__dropdown
+  top: 30px !important
+
+.cart-popup-item-qty .jq-selectbox__trigger-arrow
+  top: 13px
+
+.product-car-sku .jq-selectbox
+  width: 70%
+
+//.cart-popup-item-qty__select
+
+.cart-popup-item-qty .jq-selectbox__dropdown
+  height: 80px !important
+  overflow: scroll
+

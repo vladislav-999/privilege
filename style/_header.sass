@@ -7,7 +7,7 @@ header
     position: relative
 
 .top-nav
-    overflow: hidden
+    overflow: visible !important
     padding: 10px 0
     background: $background
     font-family: $fontfamilyLL
@@ -16,31 +16,27 @@ header
 .language-block, .currency-block
     float: left
     position: relative
-
-.language-block:after, .currency-block:after
-    content: "\f2f9"
-    font-family: 'Material-Design-Iconic-Font'
-    font-size: 22px
-    background: $background
-    position: absolute
-    width: 18px
-    height: 18px
-    right: 10px
-    top: 0
-    color: $fontColor
-    text-align: center
-    vertical-align: middle
-    line-height: 18px
-    z-index: 1
-    pointer-events: none
+//
+//.language-block:after, .currency-block:after
+//    content: "\f2f9"
+//    font-family: 'Material-Design-Iconic-Font'
+//    font-size: 22px
+//    background: $background
+//    position: absolute
+//    width: 18px
+//    height: 18px
+//    right: 10px
+//    top: 0
+//    color: $fontColor
+//    text-align: center
+//    vertical-align: middle
+//    line-height: 18px
+//    z-index: 1
+//    pointer-events: none
 
 .language-block
-    padding-right: 15px
     border-right: 1px solid $borderColor
-
-.currency-block
-    padding-left: 15px
-    padding-right: 15px
+    margin-left: -25px
 
 .language-block__select, .currency-block__select
     border: none
