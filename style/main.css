@@ -18,7 +18,7 @@ button, input[type=text], textarea, select, label, a, img {
   outline: none; }
 
 header {
-  z-index: 2;
+  z-index: 3;
   position: relative; }
 
 .top-nav {
@@ -800,6 +800,8 @@ ul.footer-menu-category__slvlul a:hover {
 .product-car-sku {
   width: 50%;
   float: left;
+  position: relative;
+  z-index: 2;
   font-family: "Lato-Light";
   color: #333;
   font-size: 14px;
