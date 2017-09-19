@@ -43,6 +43,9 @@ header {
   outline: none;
   cursor: pointer; }
 
+.language-block .jq-selectbox__dropdown {
+  width: auto !important; }
+
 .header-buttons a {
   padding: 0 15px;
   text-decoration: none;

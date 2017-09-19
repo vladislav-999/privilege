@@ -82,4 +82,13 @@ $(document).ready(function(){
 
     });
 
+    $('.language-block__select').change(function () {
+        var parent = $(this).closest('.jq-selectbox');
+        if($(this).val() != '') {
+            parent.find('.jq-selectbox__select-text').html($(this).val());
+        }
+    });
+
+    $('.language-block__select').change();
+
 });
