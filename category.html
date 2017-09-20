@@ -10,6 +10,9 @@
     <link rel="stylesheet" href="./style/main.css">
     <link rel="stylesheet" href="./style/slick.css">
     <link rel="stylesheet" href="./style/material-design-iconic-font.css">
+
+
+    <script src="./scripts/jquery-3.2.1.min.js"></script>
 </head>
 <body>
 
@@ -364,6 +367,18 @@
                 <div class="product-list grid">
 
                     <div class="wrapper">
+                        <script type="text/javascript">
+                            $(function(){
+                                $.ajax({
+                                    dataType: "json",
+                                    url: "D:/Work/ONIX/Privilege/scripts/products.json",
+                                    success: function(data) {
+                                        console.log( "success" );
+                                    }
+                                });
+                            });
+                        </script>
+
 
                         <div  class="product-card-item">
                             <a href="./product.html">
@@ -1071,7 +1086,6 @@
 
 
 <!-- SCRIPTS -->
-<script src="./scripts/jquery-3.2.1.min.js"></script>
 <script src="./scripts/slick.min.js"></script>
 <script src="./scripts/jquery.formstyler.min.js"></script>
 <script src="./scripts/scripts.js"></script>
