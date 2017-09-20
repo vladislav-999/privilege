@@ -13,6 +13,7 @@ var products_list = [
             "category": "women",
             "img": "./img/prod-1.png",
             "reviews": 0,
+            "badge": "",
             "features": [{
                 "size": 5,
                 "brand": "Gucci",
@@ -28,6 +29,7 @@ var products_list = [
             "category": "women",
             "img": "./img/prod-2.png",
             "reviews": 2,
+            "badge": '<div class="product-card-item-img-badge">new</div>',
             "features": [{
                 "size": 5,
                 "brand": "Gucci",
@@ -43,6 +45,7 @@ var products_list = [
             "category": "women",
             "img": "./img/prod-3.png",
             "reviews": 3,
+            "badge":  '<div class="product-card-item-img-badge">new</div>',
             "features": [{
                 "size": 5,
                 "brand": "Gucci",
@@ -58,6 +61,7 @@ var products_list = [
             "category": "women",
             "img": "./img/prod-1.png",
             "reviews": 4,
+            "badge": "",
             "features": [{
                 "size": 5,
                 "brand": "Gucci",
@@ -73,6 +77,7 @@ var products_list = [
             "category": "women",
             "img": "./img/prod-2.png",
             "reviews": 0,
+            "badge": "",
             "features": [{
                 "size": 5,
                 "brand": "Gucci",
@@ -88,6 +93,7 @@ var products_list = [
         "category": "men",
         "img": "./img/prod-4.png",
         "reviews": 0,
+        "badge": "",
         "features": [{
             "size": 5,
             "brand": "Gucci",
@@ -103,6 +109,7 @@ var products_list = [
         "category": "men",
         "img": "./img/prod-8.png",
         "reviews": 0,
+        "badge": "",
         "features": [{
             "size": 5,
             "brand": "Gucci",
@@ -118,6 +125,7 @@ var products_list = [
         "category": "men",
         "img": "./img/prod-9.png",
         "reviews": 0,
+        "badge": '<div class="product-card-item-img-badge">new</div>',
         "features": [{
             "size": 5,
             "brand": "Gucci",
@@ -133,6 +141,7 @@ var products_list = [
         "category": "accesories",
         "img": "./img/prod-5.png",
         "reviews": 0,
+        "badge": "",
         "features": [{
             "size": 5,
             "brand": "Gucci",
@@ -148,6 +157,7 @@ var products_list = [
         "category": "accesories",
         "img": "./img/prod-6.png",
         "reviews": 0,
+        "badge": "",
         "features": [{
             "size": 5,
             "brand": "Gucci",
@@ -163,6 +173,7 @@ var products_list = [
         "category": "accesories",
         "img": "./img/prod-7.png",
         "reviews": 0,
+        "badge": '<div class="product-card-item-img-badge">new</div>',
         "features": [{
             "size": 5,
             "brand": "Gucci",
@@ -246,6 +257,7 @@ $(document).ready(function(){
             $('.product-list .wrapper').append(' <div  class="product-card-item">'+
                 '<a href="./product.html">'+
                 '<div class="product-card-item-img">'+
+                products.productList[i].badge +
                 '<img src="'+ products.productList[i].img +'" alt="">'+
                 '<div class="product-card-review-raiting">'+ products.getRating(i) +
                 '</div>'+
