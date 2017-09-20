@@ -245,7 +245,7 @@ $(document).ready(function(){
 
     for(i = 0; products.productList.length > i; i++){
 
-        if(params['cat'] == products.productList[i].category){
+        if(params['cat'] == products.productList[i].category || params['cat'] == undefined){
 
             if(products.productList[i].oldprice != null) {
                 oldprice = '<span class="old-price">$' + products.productList[i].oldprice + '</span>';
