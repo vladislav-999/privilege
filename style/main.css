@@ -1461,7 +1461,8 @@ ul.footer-menu-category__slvlul a:hover {
   cursor: pointer;
   transition: all 0.3s;
   height: 42px;
-  vertical-align: middle; }
+  vertical-align: middle;
+  margin: 0 5px; }
 
 .product-card-item__button:hover {
   background: #333;
