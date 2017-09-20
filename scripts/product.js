@@ -206,8 +206,10 @@ function getRating(obj, id) {
 
 
 
-
 $(document).ready(function(){
+
+
+
     var strGET = window.location.search.replace( '?', '');
     console.log(strGET);
     var params = window
@@ -223,6 +225,10 @@ $(document).ready(function(){
             },
             {}
         );
+
+
+    $('.header-menu_menu__a').removeClass('select');
+    $('a[href="./category.html?'+strGET+'"]').addClass('select');
 
     console.log( params['cat']);
 
