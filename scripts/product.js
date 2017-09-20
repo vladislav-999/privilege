@@ -379,7 +379,7 @@ var products_list = [
         "rating": 3,
         "description": "By creating an account with our store, you will be able to move through the checkout process faster, store multiple shipping addresses, view and track your orders in your account and more.",
         "category": "men",
-        "img": "./img/prod-4git .png",
+        "img": "./img/prod-4.png",
         "reviews": 0,
         "badge": '',
         "features": [{
