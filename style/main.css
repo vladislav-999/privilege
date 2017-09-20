@@ -1425,7 +1425,7 @@ ul.footer-menu-category__slvlul a:hover {
   transition: all 0.3s; }
 
 .product-card-item-img img {
-  vertical-align: bottom;
+  vertical-align: middle;
   max-height: 100%; }
 
 .product-card-item-title {

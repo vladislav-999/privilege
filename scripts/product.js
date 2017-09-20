@@ -192,9 +192,79 @@ var products = {
 
     getRating: function(id){
         return getRating(this, id);
+    },
+
+    productPrint: function(i){
+        if (this.productList[i].oldprice != null) {
+            oldprice = '<span class="old-price">$' + this.productList[i].oldprice + '</span>';
+        } else {
+            oldprice = '';
+        }
+
+        $('.product-list .wrapper').append(' <div  class="product-card-item">' +
+            '<a href="./product.html">' +
+            '<div class="product-card-item-img">' +
+            this.productList[i].badge +
+            '<img src="' + this.productList[i].img + '" alt="">' +
+            '<div class="product-card-review-raiting">' + this.getRating(i) +
+            '</div>' +
+            '</div>' +
+            '</a>' +
+            '<div class="product-card-add-to-cart">' +
+            '<div class="product-card-item-title">' +
+            '<a href="./product.html">' + this.productList[i].name + '</a>' +
+            ' </div>' +
+            '<div class="product-card-review">' +
+            '<div class="product-card-review-raiting">' + this.getRating(i) +
+            ' </div>' +
+            ' <a href="#">' + this.productList[i].reviews + ' Review(s)</a> | <a href="#">Add Review</a>' +
+            '</div>' +
+            '<div class="product-card-item-description">' +
+            '<div class="product-card-item-description__description">' + this.productList[i].description + '</div>' +
+            '<div class="product-card-item-price">' +
+            oldprice + '$' + this.productList[i].price +
+            '</div>' +
+            '</div>' +
+            '<a href="" class="product-card-buy-add-to-cart__favorite"><i class="zmdi zmdi-favorite-outline"></i></a>' +
+            '<button class="product-card-item__button">' +
+            ' Add to Cart' +
+            '</button>' +
+            '<a href="" class="product-card-buy-add-to-cart__compare"><i class="zmdi zmdi-swap-vertical"></i></a>' +
+            '</div>' +
+            '</div>');
+    },
+
+    productsOutput: function (category, filters) {
+
+        $('.product-list .wrapper').html('');
+
+        for(var i = 0; products.productList.length > i; i++){
+
+            if(category == products.productList[i].category || category == undefined){
+
+                var reg = products.productList[i].features[0].color;
+
+                console.log(filters)
+
+                if(!filters) {
+
+                    this.productPrint(i);
+
+                }else if(filters.indexOf(products.productList[i].features[0].color) != -1){
+
+                    this.productPrint(i);
+                }
+
+            }
+        }
+    },
+
+    filtration: function () {
+
+
     }
 
-}
+};
 
 function getProduct(obj, id) {
     return obj.productList[id];
@@ -219,10 +289,44 @@ function getRating(obj, id) {
 
 $(document).ready(function(){
 
+    $('.filter-param__input').change(function(){
+        var nameFilter = $(this).closest('.filter').find('.filter-title').text().replace(/^(\s|\u00A0)+/g, '');
+        var paramName = $('.filter-param__label[for="'+$(this).attr('id')+'"]').text();
+        var sunstr;
 
+        var strGET = window.location.search.replace( '?', '');
+        var params = window
+            .location
+            .search
+            .replace('?','')
+            .split('&')
+            .reduce(
+                function(p,e){
+                    var a = e.split('=');
+                    p[ decodeURIComponent(a[0])] = decodeURIComponent(a[1]);
+                    return p;
+                },
+                {}
+            );
+
+        if(!params['color']){
+            history.pushState(null,null,'?' + strGET+'&color='+paramName.toLowerCase());
+            products.productsOutput(params['cat'],params['color'] + ',' +paramName.toLowerCase());
+        }else{
+            if(params['color'].indexOf(paramName.toLowerCase()) != -1){
+                sunstr=params['color'].replace(new RegExp(paramName.toLowerCase(),'g'), '');
+
+                history.pushState(null,null,'?cat='+params["cat"]+'&color='+sunstr);
+                products.productsOutput(params['cat'],sunstr);
+            }else{
+                history.pushState(null,null,'?' + strGET+ ',' +paramName.toLowerCase() );
+                products.productsOutput(params['cat'],params['color'] + ',' +paramName.toLowerCase());
+            }
+        }
+
+    });
 
     var strGET = window.location.search.replace( '?', '');
-    console.log(strGET);
     var params = window
         .location
         .search
@@ -241,52 +345,8 @@ $(document).ready(function(){
     $('.header-menu_menu__a').removeClass('select');
     $('a[href="./category.html?'+strGET+'"]').addClass('select');
 
-    console.log( params['cat']);
-
-    for(i = 0; products.productList.length > i; i++){
-
-        if(params['cat'] == products.productList[i].category || params['cat'] == undefined){
-
-            if(products.productList[i].oldprice != null) {
-                oldprice = '<span class="old-price">$' + products.productList[i].oldprice + '</span>';
-            }else{
-                oldprice = '';
-            }
+    products.productsOutput(params['cat'], params['color']);
 
 
-            $('.product-list .wrapper').append(' <div  class="product-card-item">'+
-                '<a href="./product.html">'+
-                '<div class="product-card-item-img">'+
-                products.productList[i].badge +
-                '<img src="'+ products.productList[i].img +'" alt="">'+
-                '<div class="product-card-review-raiting">'+ products.getRating(i) +
-                '</div>'+
-                '</div>'+
-                '</a>'+
-                '<div class="product-card-add-to-cart">'+
-                '<div class="product-card-item-title">'+
-                '<a href="./product.html">'+ products.productList[i].name +'</a>'+
-           ' </div>'+
-            '<div class="product-card-review">'+
-            '<div class="product-card-review-raiting">'+ products.getRating(i) +
-               ' </div>'+
-               ' <a href="#">'+ products.productList[i].reviews +' Review(s)</a> | <a href="#">Add Review</a>'+
-            '</div>'+
-           '<div class="product-card-item-description">'+
-               '<div class="product-card-item-description__description">'+ products.productList[i].description +'</div>'+
-            '<div class="product-card-item-price">'+
-               oldprice + '$'+products.productList[i].price +
-            '</div>'+
-            '</div>'+
-            '<a href="" class="product-card-buy-add-to-cart__favorite"><i class="zmdi zmdi-favorite-outline"></i></a>'+
-               '<button class="product-card-item__button">'+
-               ' Add to Cart'+
-           '</button>'+
-            '<a href="" class="product-card-buy-add-to-cart__compare"><i class="zmdi zmdi-swap-vertical"></i></a>'+
-               '</div>'+
-                '</div>');
-
-        }
-    }
 
 });
