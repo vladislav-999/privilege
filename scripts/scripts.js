@@ -13,6 +13,16 @@ $(document).ready(function(){
         slidesToShow: 3
     });
 
+    $('.product-small-image a').hover(function(){
+        var href = $(this).find('img').attr('src');
+
+        $('.product-small-image a').removeClass('active');
+        $(this).addClass('active');
+
+        $('.product-main-image a').attr('href', href);
+        $('.product-main-image img').attr('src', href);
+    });
+
     $('a.product-sort-view__a').click(function(){
         if(!$(this).hasClass('active')){
             $('a.product-sort-view__a').removeClass('active');

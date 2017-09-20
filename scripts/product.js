@@ -244,8 +244,6 @@ var products = {
 
                 var reg = products.productList[i].features[0].color;
 
-                console.log(filters)
-
                 if(!filters) {
 
                     this.productPrint(i);
@@ -291,7 +289,7 @@ $(document).ready(function(){
 
     $('.filter-param__input').change(function(){
         var nameFilter = $(this).closest('.filter').find('.filter-title').text().replace(/^(\s|\u00A0)+/g, '');
-        var paramName = $('.filter-param__label[for="'+$(this).attr('id')+'"]').text();
+        var paramName = $('.filter-param__label[for="'+$(this).attr('id')+'"]').text().toLowerCase();
         var sunstr;
 
         var strGET = window.location.search.replace( '?', '');
@@ -309,11 +307,14 @@ $(document).ready(function(){
                 {}
             );
 
+
+
         if(!params['color']){
             history.pushState(null,null,'?' + strGET+'&color='+paramName.toLowerCase());
             products.productsOutput(params['cat'],params['color']  +paramName.toLowerCase());
         }else{
             if(params['color'].indexOf(paramName.toLowerCase()) != -1){
+                console.log(params['color'] + " !!! " + paramName.toLowerCase());
                 sunstr=params['color'].replace(new RegExp(paramName.toLowerCase(),'g'), '');
 
                 history.pushState(null,null,'?cat='+params["cat"]+'&color='+sunstr);
