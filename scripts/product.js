@@ -179,6 +179,326 @@ var products_list = [
             "brand": "Gucci",
             "color": "white"
         }]
+    }, {
+        "id" : 12,
+        "name": "Sunglasses",
+        "price": '150.00',
+        "oldprice": null,
+        "rating": 3,
+        "description": "By creating an account with our store, you will be able to move through the checkout process faster, store multiple shipping addresses, view and track your orders in your account and more.",
+        "category": "accesories",
+        "img": "./img/prod-10.png",
+        "reviews": 0,
+        "badge": "",
+        "features": [{
+            "size": 5,
+            "brand": "Gucci",
+            "color": "white"
+        }]
+    }, {
+        "id" : 13,
+        "name": "Hat",
+        "price": '230.00',
+        "oldprice": '320.00',
+        "rating": 3,
+        "description": "By creating an account with our store, you will be able to move through the checkout process faster, store multiple shipping addresses, view and track your orders in your account and more.",
+        "category": "accesories",
+        "img": "./img/prod-11.png",
+        "reviews": 0,
+        "badge": "",
+        "features": [{
+            "size": 5,
+            "brand": "Gucci",
+            "color": "white"
+        }]
+    }, {
+        "id" : 14,
+        "name": "Clock",
+        "price": '250.00',
+        "oldprice": '190.00',
+        "rating": 3,
+        "description": "By creating an account with our store, you will be able to move through the checkout process faster, store multiple shipping addresses, view and track your orders in your account and more.",
+        "category": "accesories",
+        "img": "./img/prod-12.png",
+        "reviews": 0,
+        "badge": '<div class="product-card-item-img-badge">new</div>',
+        "features": [{
+            "size": 5,
+            "brand": "Gucci",
+            "color": "white"
+        }]
+    }, {
+        "id" : 15,
+        "name": "Sunglasses",
+        "price": '150.00',
+        "oldprice": null,
+        "rating": 3,
+        "description": "By creating an account with our store, you will be able to move through the checkout process faster, store multiple shipping addresses, view and track your orders in your account and more.",
+        "category": "accesories",
+        "img": "./img/prod-13.png",
+        "reviews": 0,
+        "badge": "",
+        "features": [{
+            "size": 5,
+            "brand": "Gucci",
+            "color": "white"
+        }]
+    }, {
+        "id" : 16,
+        "name": "Hat",
+        "price": '230.00',
+        "oldprice": '320.00',
+        "rating": 3,
+        "description": "By creating an account with our store, you will be able to move through the checkout process faster, store multiple shipping addresses, view and track your orders in your account and more.",
+        "category": "accesories",
+        "img": "./img/prod-14.png",
+        "reviews": 0,
+        "badge": "",
+        "features": [{
+            "size": 5,
+            "brand": "Gucci",
+            "color": "white"
+        }]
+    }, {
+        "id" : 17,
+        "name": "Clock",
+        "price": '250.00',
+        "oldprice": '190.00',
+        "rating": 3,
+        "description": "By creating an account with our store, you will be able to move through the checkout process faster, store multiple shipping addresses, view and track your orders in your account and more.",
+        "category": "accesories",
+        "img": "./img/prod-15.png",
+        "reviews": 0,
+        "badge": '<div class="product-card-item-img-badge">new</div>',
+        "features": [{
+            "size": 5,
+            "brand": "Gucci",
+            "color": "white"
+        }]
+    }, {
+        "id" : 18,
+        "name": "Sunglasses",
+        "price": '150.00',
+        "oldprice": null,
+        "rating": 3,
+        "description": "By creating an account with our store, you will be able to move through the checkout process faster, store multiple shipping addresses, view and track your orders in your account and more.",
+        "category": "accesories",
+        "img": "./img/prod-16.png",
+        "reviews": 0,
+        "badge": "",
+        "features": [{
+            "size": 5,
+            "brand": "Gucci",
+            "color": "white"
+        }]
+    }, {
+        "id" : 19,
+        "name": "Hat",
+        "price": '230.00',
+        "oldprice": '320.00',
+        "rating": 3,
+        "description": "By creating an account with our store, you will be able to move through the checkout process faster, store multiple shipping addresses, view and track your orders in your account and more.",
+        "category": "accesories",
+        "img": "./img/prod-17.png",
+        "reviews": 0,
+        "badge": "",
+        "features": [{
+            "size": 5,
+            "brand": "Gucci",
+            "color": "white"
+        }]
+    }, {
+        "id" : 20,
+        "name": "Clock",
+        "price": '250.00',
+        "oldprice": '190.00',
+        "rating": 3,
+        "description": "By creating an account with our store, you will be able to move through the checkout process faster, store multiple shipping addresses, view and track your orders in your account and more.",
+        "category": "accesories",
+        "img": "./img/prod-18.png",
+        "reviews": 0,
+        "badge": '',
+        "features": [{
+            "size": 5,
+            "brand": "Gucci",
+            "color": "white"
+        }]
+    }, {
+        "id" : 21,
+        "name": "Men Suit Jacket",
+        "price": '250.00',
+        "oldprice": '190.00',
+        "rating": 3,
+        "description": "By creating an account with our store, you will be able to move through the checkout process faster, store multiple shipping addresses, view and track your orders in your account and more.",
+        "category": "men",
+        "img": "./img/prod-19.png",
+        "reviews": 0,
+        "badge": '<div class="product-card-item-img-badge">new</div>',
+        "features": [{
+            "size": 5,
+            "brand": "Gucci",
+            "color": "white"
+        }]
+    }, {
+        "id" : 22,
+        "name": "Men Suit Jacket",
+        "price": '250.00',
+        "oldprice": '190.00',
+        "rating": 3,
+        "description": "By creating an account with our store, you will be able to move through the checkout process faster, store multiple shipping addresses, view and track your orders in your account and more.",
+        "category": "men",
+        "img": "./img/prod-4.png",
+        "reviews": 0,
+        "badge": '',
+        "features": [{
+            "size": 5,
+            "brand": "Gucci",
+            "color": "white"
+        }]
+    }, {
+        "id" : 23,
+        "name": "Men Suit Jacket",
+        "price": '250.00',
+        "oldprice": '190.00',
+        "rating": 3,
+        "description": "By creating an account with our store, you will be able to move through the checkout process faster, store multiple shipping addresses, view and track your orders in your account and more.",
+        "category": "men",
+        "img": "./img/prod-9.png",
+        "reviews": 0,
+        "badge": '',
+        "features": [{
+            "size": 5,
+            "brand": "Gucci",
+            "color": "white"
+        }]
+    }, {
+        "id" : 24,
+        "name": "Men Suit Jacket",
+        "price": '250.00',
+        "oldprice": '190.00',
+        "rating": 3,
+        "description": "By creating an account with our store, you will be able to move through the checkout process faster, store multiple shipping addresses, view and track your orders in your account and more.",
+        "category": "men",
+        "img": "./img/prod-4git .png",
+        "reviews": 0,
+        "badge": '',
+        "features": [{
+            "size": 5,
+            "brand": "Gucci",
+            "color": "white"
+        }]
+    }, {
+        "id" : 25,
+        "name": "Men Suit Jacket",
+        "price": '250.00',
+        "oldprice": '190.00',
+        "rating": 3,
+        "description": "By creating an account with our store, you will be able to move through the checkout process faster, store multiple shipping addresses, view and track your orders in your account and more.",
+        "category": "men",
+        "img": "./img/prod-8.png",
+        "reviews": 0,
+        "badge": '',
+        "features": [{
+            "size": 5,
+            "brand": "Gucci",
+            "color": "white"
+        }]
+    }, {
+        "id" : 26,
+        "name": "Men Suit Jacket",
+        "price": '250.00',
+        "oldprice": '190.00',
+        "rating": 3,
+        "description": "By creating an account with our store, you will be able to move through the checkout process faster, store multiple shipping addresses, view and track your orders in your account and more.",
+        "category": "men",
+        "img": "./img/prod-9.png",
+        "reviews": 0,
+        "badge": '<div class="product-card-item-img-badge">new</div>',
+        "features": [{
+            "size": 5,
+            "brand": "Gucci",
+            "color": "white"
+        }]
+    }, {
+        "id" : 27,
+        "name": "Women White Shirt",
+        "price": '150.00',
+        "oldprice": null,
+        "rating": 4,
+        "description": "By creating an account with our store, you will be able to move through the checkout process faster, store multiple shipping addresses, view and track your orders in your account and more.",
+        "category": "women",
+        "img": "./img/prod-1.png",
+        "reviews": 0,
+        "badge": "",
+        "features": [{
+            "size": 5,
+            "brand": "Gucci",
+            "color": "grey"
+        }]
+    }, {
+        "id" : 28,
+        "name": "Women Shirt Summer",
+        "price": '230.00',
+        "oldprice": '320.00',
+        "rating": 3,
+        "description": "By creating an account with our store, you will be able to move through the checkout process faster, store multiple shipping addresses, view and track your orders in your account and more.",
+        "category": "women",
+        "img": "./img/prod-2.png",
+        "reviews": 2,
+        "badge": '<div class="product-card-item-img-badge">new</div>',
+        "features": [{
+            "size": 5,
+            "brand": "Gucci",
+            "color": "red"
+        }]
+    },{
+        "id" : 29,
+        "name": "Women Flowers Shirt",
+        "price": '190.00',
+        "oldprice": '250.00',
+        "rating": 5,
+        "description": "By creating an account with our store, you will be able to move through the checkout process faster, store multiple shipping addresses, view and track your orders in your account and more.",
+        "category": "women",
+        "img": "./img/prod-3.png",
+        "reviews": 3,
+        "badge":  '<div class="product-card-item-img-badge">new</div>',
+        "features": [{
+            "size": 5,
+            "brand": "Gucci",
+            "color": "red"
+        }]
+    },{
+        "id" : 30,
+        "name": "Women Shirt",
+        "price": '150.00',
+        "oldprice": null,
+        "rating": 4,
+        "description": "By creating an account with our store, you will be able to move through the checkout process faster, store multiple shipping addresses, view and track your orders in your account and more.",
+        "category": "women",
+        "img": "./img/prod-1.png",
+        "reviews": 4,
+        "badge": "",
+        "features": [{
+            "size": 5,
+            "brand": "Gucci",
+            "color": "gold"
+        }]
+    }, {
+        "id" : 31,
+        "name": "Women Jeans Shirt",
+        "price": '230.00',
+        "oldprice": null,
+        "rating": 3,
+        "description": "By creating an account with our store, you will be able to move through the checkout process faster, store multiple shipping addresses, view and track your orders in your account and more.",
+        "category": "women",
+        "img": "./img/prod-2.png",
+        "reviews": 0,
+        "badge": "",
+        "features": [{
+            "size": 5,
+            "brand": "Gucci",
+            "color": "white"
+        }]
     }];
 
 
@@ -288,7 +608,7 @@ function getRating(obj, id) {
 $(document).ready(function(){
 
     $('.filter-param__input').change(function(){
-        var nameFilter = $(this).closest('.filter').find('.filter-title').text().replace(/^(\s|\u00A0)+/g, '');
+        var nameFilter = $(this).closest('.filter').attr('data-filter');
         var paramName = $('.filter-param__label[for="'+$(this).attr('id')+'"]').text().toLowerCase();
         var sunstr;
 
@@ -307,21 +627,36 @@ $(document).ready(function(){
                 {}
             );
 
-
-
-        if(!params['color']){
-            history.pushState(null,null,'?' + strGET+'&color='+paramName.toLowerCase());
-            products.productsOutput(params['cat'],params['color']  +paramName.toLowerCase());
+        if(!params[nameFilter]){
+            history.pushState(null,null,'?' + strGET+'&'+nameFilter+'='+paramName.toLowerCase());
+            products.productsOutput(params['cat'],params[nameFilter]  +paramName.toLowerCase());
         }else{
-            if(params['color'].indexOf(paramName.toLowerCase()) != -1){
-                console.log(params['color'] + " !!! " + paramName.toLowerCase());
-                sunstr=params['color'].replace(new RegExp(paramName.toLowerCase(),'g'), '');
+            if(params[nameFilter].indexOf(paramName.toLowerCase()) != -1){
+                console.log(params[nameFilter] + " !!! " + paramName.toLowerCase());
+                sunstr=params[nameFilter].replace(new RegExp(paramName.toLowerCase(),'g'), '');
 
-                history.pushState(null,null,'?cat='+params["cat"]+'&color='+sunstr);
+                history.pushState(null,null,'?cat='+params["cat"]+'&'+nameFilter+'='+sunstr);
                 products.productsOutput(params['cat'],sunstr);
             }else{
                 history.pushState(null,null,'?' + strGET +paramName.toLowerCase() );
-                products.productsOutput(params['cat'],params['color']  +paramName.toLowerCase());
+                products.productsOutput(params['cat'],params[nameFilter]  +paramName.toLowerCase());
+            }
+        }
+
+        if(!params['color']){
+            history.pushState(null,null,'?' + strGET+'&'+nameFilter+'='+paramName.toLowerCase());
+            products.productsOutput(params['cat'],params[nameFilter]  +paramName.toLowerCase());
+        }else{
+            if(params[nameFilter].indexOf(paramName.toLowerCase()) != -1){
+                console.log(params[nameFilter] + " !!! " + paramName.toLowerCase());
+                sunstr=params[nameFilter].replace(new RegExp(paramName.toLowerCase(),'g'), '');
+
+
+                history.pushState(null,null,'?cat='+params["cat"]+'&'+nameFilter+'='+sunstr);
+                products.productsOutput(params['cat'],sunstr);
+            }else{
+                history.pushState(null,null,'?' + strGET +paramName.toLowerCase() );
+                products.productsOutput(params['cat'],params[nameFilter]  +paramName.toLowerCase());
             }
         }
 
