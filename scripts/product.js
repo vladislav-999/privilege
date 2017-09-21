@@ -81,7 +81,7 @@ var products_list = [
             "features": [{
                 "size": 5,
                 "brand": "Gucci",
-                "color": "white"
+                "color": "brown"
             }]
         }, {
         "id" : 6,
@@ -129,7 +129,7 @@ var products_list = [
         "features": [{
             "size": 5,
             "brand": "Gucci",
-            "color": "white"
+            "color": "brown"
         }]
     }, {
         "id" : 9,
@@ -145,7 +145,7 @@ var products_list = [
         "features": [{
             "size": 5,
             "brand": "Gucci",
-            "color": "white"
+            "color": "brown"
         }]
     }, {
         "id" : 10,
@@ -177,7 +177,7 @@ var products_list = [
         "features": [{
             "size": 5,
             "brand": "Gucci",
-            "color": "white"
+            "color": "yellow"
         }]
     }, {
         "id" : 12,
@@ -209,7 +209,7 @@ var products_list = [
         "features": [{
             "size": 5,
             "brand": "Gucci",
-            "color": "white"
+            "color": "yellow"
         }]
     }, {
         "id" : 14,
@@ -225,7 +225,7 @@ var products_list = [
         "features": [{
             "size": 5,
             "brand": "Gucci",
-            "color": "white"
+            "color": "yellow"
         }]
     }, {
         "id" : 15,
@@ -257,7 +257,7 @@ var products_list = [
         "features": [{
             "size": 5,
             "brand": "Gucci",
-            "color": "white"
+            "color": "red"
         }]
     }, {
         "id" : 17,
@@ -273,7 +273,7 @@ var products_list = [
         "features": [{
             "size": 5,
             "brand": "Gucci",
-            "color": "white"
+            "color": "red"
         }]
     }, {
         "id" : 18,
@@ -321,7 +321,7 @@ var products_list = [
         "features": [{
             "size": 5,
             "brand": "Gucci",
-            "color": "white"
+            "color": "black"
         }]
     }, {
         "id" : 21,
@@ -337,7 +337,7 @@ var products_list = [
         "features": [{
             "size": 5,
             "brand": "Gucci",
-            "color": "white"
+            "color": "blue"
         }]
     }, {
         "id" : 22,
@@ -369,7 +369,7 @@ var products_list = [
         "features": [{
             "size": 5,
             "brand": "Gucci",
-            "color": "white"
+            "color": "blue"
         }]
     }, {
         "id" : 24,
@@ -385,7 +385,7 @@ var products_list = [
         "features": [{
             "size": 5,
             "brand": "Gucci",
-            "color": "white"
+            "color": "multi"
         }]
     }, {
         "id" : 25,
@@ -401,7 +401,7 @@ var products_list = [
         "features": [{
             "size": 5,
             "brand": "Gucci",
-            "color": "white"
+            "color": "grey"
         }]
     }, {
         "id" : 26,
@@ -417,7 +417,7 @@ var products_list = [
         "features": [{
             "size": 5,
             "brand": "Gucci",
-            "color": "white"
+            "color": "silver"
         }]
     }, {
         "id" : 27,
@@ -497,7 +497,7 @@ var products_list = [
         "features": [{
             "size": 5,
             "brand": "Gucci",
-            "color": "white"
+            "color": "silver"
         }]
     }];
 
@@ -627,7 +627,7 @@ $(document).ready(function(){
                 {}
             );
 
-        if(!params[nameFilter]){
+     /*   if(!params[nameFilter]){
             history.pushState(null,null,'?' + strGET+'&'+nameFilter+'='+paramName.toLowerCase());
             products.productsOutput(params['cat'],params[nameFilter]  +paramName.toLowerCase());
         }else{
@@ -641,7 +641,7 @@ $(document).ready(function(){
                 history.pushState(null,null,'?' + strGET +paramName.toLowerCase() );
                 products.productsOutput(params['cat'],params[nameFilter]  +paramName.toLowerCase());
             }
-        }
+        }*/
 
         if(!params['color']){
             history.pushState(null,null,'?' + strGET+'&'+nameFilter+'='+paramName.toLowerCase());

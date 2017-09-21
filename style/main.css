@@ -734,12 +734,12 @@ ul.footer-menu-category__slvlul a:hover {
 .product-main-image {
   text-align: center;
   border: 1px solid #e5e5e5;
-  min-height: 560px;
   vertical-align: middle;
   line-height: 350px; }
 
 .product-main-image img {
-  vertical-align: bottom; }
+  vertical-align: bottom;
+  max-width: 100%; }
 
 .product-small-image {
   display: flex;
@@ -754,13 +754,15 @@ ul.footer-menu-category__slvlul a:hover {
   float: left;
   border: 1px solid #e5e5e5;
   margin: 0 10px;
-  margin: 0 10px;
-  height: 160px; }
+  height: 160px;
+  line-height: 160px; }
 
 .product-small-image a img {
   margin: 0 auto;
   max-width: 100%;
-  max-height: 100%; }
+  max-height: 100%;
+  vertical-align: middle;
+  display: inline-block; }
 
 .product-small-image a.active {
   border: 1px solid #ccb48e; }

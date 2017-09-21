@@ -14,7 +14,7 @@ $(document).ready(function(){
     });
 
     $('.product-small-image a').hover(function(){
-        var href = $(this).find('img').attr('src');
+        var href = $(this).attr('href');
 
         $('.product-small-image a').removeClass('active');
         $(this).addClass('active');
