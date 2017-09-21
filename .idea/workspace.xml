@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="5b045849-b310-44da-9b4e-f26f29de60a7" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/category.html" afterPath="$PROJECT_DIR$/category.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scripts/product.js" afterPath="$PROJECT_DIR$/scripts/product.js" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -50,8 +49,8 @@
       <file leaf-file-name="product.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/scripts/product.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="464">
-              <caret line="682" column="80" lean-forward="false" selection-start-line="682" selection-start-column="80" selection-end-line="682" selection-end-column="80" />
+            <state relative-caret-position="187">
+              <caret line="499" column="25" lean-forward="false" selection-start-line="499" selection-start-column="22" selection-end-line="499" selection-end-column="25" />
               <folding>
                 <element signature="e#0#49#0" expanded="false" />
               </folding>
@@ -62,7 +61,7 @@
       <file leaf-file-name="scripts.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/scripts/scripts.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
+            <state relative-caret-position="68">
               <caret line="16" column="37" lean-forward="false" selection-start-line="16" selection-start-column="37" selection-end-line="16" selection-end-column="37" />
               <folding />
             </state>
@@ -118,7 +117,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>jq-selectbox jqselect dropdown opened</find>
       <find>.product-car-sku__select</find>
       <find>.product-car-sk</find>
       <find>cart-popup-item</find>
@@ -139,15 +137,16 @@
       <find>language-block</find>
       <find>.product-card-item-img img</find>
       <find>Women Shirt Summer</find>
-      <find>gold</find>
       <find>.product-small-image a</find>
       <find>product-main-image</find>
       <find>','</find>
       <find>.product-main-image img</find>
       <find>.product-small-image a img</find>
-      <find>.product-main-image</find>
       <find>white</find>
+      <find>.product-main-image</find>
+      <find>gold</find>
       <find>product-small-image</find>
+      <find>sil</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -356,12 +355,12 @@
       <workItem from="1505306588761" duration="147000" />
       <workItem from="1505306869435" duration="54762000" />
       <workItem from="1505478513179" duration="9450000" />
-      <workItem from="1505717081057" duration="83135000" />
+      <workItem from="1505717081057" duration="94605000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="147494000" />
+    <option name="totallyTimeSpent" value="158964000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -812,14 +811,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/style/_product.sass">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="331">
-          <caret line="26" column="17" lean-forward="false" selection-start-line="26" selection-start-column="17" selection-end-line="26" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/product.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="221">
@@ -832,6 +823,14 @@
             <element signature="n#div#1;n#div#1;n#div#1;n#div#1;n#div#0;n#div#1;n#main#0;n#body#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#div#2;n#div#1;n#div#1;n#div#1;n#div#0;n#div#1;n#main#0;n#body#0;n#html#0;n#!!top" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/style/_product.sass">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="331">
+          <caret line="26" column="17" lean-forward="false" selection-start-line="26" selection-start-column="17" selection-end-line="26" selection-end-column="17" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -860,7 +859,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/scripts/scripts.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
+        <state relative-caret-position="68">
           <caret line="16" column="37" lean-forward="false" selection-start-line="16" selection-start-column="37" selection-end-line="16" selection-end-column="37" />
           <folding />
         </state>
@@ -868,8 +867,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/scripts/product.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="464">
-          <caret line="682" column="80" lean-forward="false" selection-start-line="682" selection-start-column="80" selection-end-line="682" selection-end-column="80" />
+        <state relative-caret-position="187">
+          <caret line="499" column="25" lean-forward="false" selection-start-line="499" selection-start-column="22" selection-end-line="499" selection-end-column="25" />
           <folding>
             <element signature="e#0#49#0" expanded="false" />
           </folding>

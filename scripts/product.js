@@ -16,7 +16,7 @@ var products_list = [
             "badge": "",
             "features": [{
                 "size": 5,
-                "brand": "Gucci",
+                "brand": "Chanel",
                 "color": "grey"
             }]
         }, {
@@ -48,7 +48,7 @@ var products_list = [
             "badge":  '<div class="product-card-item-img-badge">new</div>',
             "features": [{
                 "size": 5,
-                "brand": "Gucci",
+                "brand": "Chanel",
                 "color": "red"
             }]
         },{
@@ -64,7 +64,7 @@ var products_list = [
             "badge": "",
             "features": [{
                 "size": 5,
-                "brand": "Gucci",
+                "brand": "Chanel",
                 "color": "gold"
             }]
         }, {
@@ -80,7 +80,7 @@ var products_list = [
             "badge": "",
             "features": [{
                 "size": 5,
-                "brand": "Gucci",
+                "brand": "Chanel",
                 "color": "brown"
             }]
         }, {
@@ -568,12 +568,44 @@ var products = {
 
                     this.productPrint(i);
 
-                }else if(filters.indexOf(products.productList[i].features[0].color) != -1){
+                /*}else if(filters.indexOf(products.productList[i].features[0].color) != -1){
 
                     this.productPrint(i);
-                }
 
+                } */
+                }else{
+
+                    var flag = true;
+
+                    var filtersParam = filters.split('&');
+                   // console.log(filtersParam);
+
+                    for(var j = 1; j < filtersParam.length; j++){
+                    //    console.log(this.charCheck(i,filtersParam[j]) + " --- " + filtersParam[j]);
+                        if(this.charCheck(i,filtersParam[j]) == false) {
+                            flag = false;
+                        }
+                    }
+                    if(flag != false){
+                        this.productPrint(i);
+                    }
+
+                   // if(filters.indexOf(products.productList[i].features[0].color) != -1)
+
+
+
+                }
             }
+        }
+    },
+
+    charCheck: function(id, filterParams) {
+        var features = filterParams.split('=');
+        console.log(this.productList[id].features[0]);
+        if(filterParams.indexOf(this.productList[id].features[0].color) != -1){
+            return true;
+        }else{
+            return false;
         }
     },
 
@@ -627,23 +659,39 @@ $(document).ready(function(){
                 {}
             );
 
-     /*   if(!params[nameFilter]){
-            history.pushState(null,null,'?' + strGET+'&'+nameFilter+'='+paramName.toLowerCase());
+        if(!params[nameFilter]){
+            history.pushState(null,null,'?' + strGET+'&'+nameFilter+'='+paramName.toLowerCase() + ',');
             products.productsOutput(params['cat'],params[nameFilter]  +paramName.toLowerCase());
         }else{
-            if(params[nameFilter].indexOf(paramName.toLowerCase()) != -1){
-                console.log(params[nameFilter] + " !!! " + paramName.toLowerCase());
-                sunstr=params[nameFilter].replace(new RegExp(paramName.toLowerCase(),'g'), '');
+            if(params[nameFilter].indexOf(paramName.toLowerCase() + ',') != -1){
 
-                history.pushState(null,null,'?cat='+params["cat"]+'&'+nameFilter+'='+sunstr);
+                sunstr=strGET.replace(new RegExp(paramName.toLowerCase().replace(' ','%20').replace(' ','%20') + ',','g'), '');
+
+                params = sunstr.replace('?','')
+                    .split('&')
+                    .reduce(
+                        function(p,e){
+                            var a = e.split('=');
+                            p[ decodeURIComponent(a[0])] = decodeURIComponent(a[1]);
+                            return p;
+                        },
+                        {}
+                    );
+
+                if(params[nameFilter] == ''){
+                    sunstr = sunstr.replace('&'+nameFilter+'=','');
+                }
+
+                history.pushState(null,null,'?'+sunstr);
                 products.productsOutput(params['cat'],sunstr);
             }else{
-                history.pushState(null,null,'?' + strGET +paramName.toLowerCase() );
-                products.productsOutput(params['cat'],params[nameFilter]  +paramName.toLowerCase());
+                var getPars = strGET.split(nameFilter+'=');
+                history.pushState(null,null,'?' + getPars[0] + nameFilter+'='+ paramName.toLowerCase() + ',' +getPars[1] );
+                products.productsOutput(params['cat'],getPars[0] + nameFilter+'='+ paramName.toLowerCase() + ',' +getPars[1]);
             }
-        }*/
+        }
 
-        if(!params['color']){
+       /* if(!params['color']){
             history.pushState(null,null,'?' + strGET+'&'+nameFilter+'='+paramName.toLowerCase() + ',');
             products.productsOutput(params['cat'],params[nameFilter]  +paramName.toLowerCase());
         }else{
@@ -657,7 +705,7 @@ $(document).ready(function(){
                 history.pushState(null,null,'?' + strGET +paramName.toLowerCase() + ',' );
                 products.productsOutput(params['cat'],params[nameFilter]  +paramName.toLowerCase());
             }
-        }
+        }*/
 
     });
 
