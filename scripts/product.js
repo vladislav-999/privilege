@@ -644,18 +644,17 @@ $(document).ready(function(){
         }*/
 
         if(!params['color']){
-            history.pushState(null,null,'?' + strGET+'&'+nameFilter+'='+paramName.toLowerCase());
+            history.pushState(null,null,'?' + strGET+'&'+nameFilter+'='+paramName.toLowerCase() + ',');
             products.productsOutput(params['cat'],params[nameFilter]  +paramName.toLowerCase());
         }else{
-            if(params[nameFilter].indexOf(paramName.toLowerCase()) != -1){
+            if(params[nameFilter].indexOf(paramName.toLowerCase() + ',') != -1){
                 console.log(params[nameFilter] + " !!! " + paramName.toLowerCase());
-                sunstr=params[nameFilter].replace(new RegExp(paramName.toLowerCase(),'g'), '');
-
+                sunstr=params[nameFilter].replace(new RegExp(paramName.toLowerCase() + ',','g'), '');
 
                 history.pushState(null,null,'?cat='+params["cat"]+'&'+nameFilter+'='+sunstr);
                 products.productsOutput(params['cat'],sunstr);
             }else{
-                history.pushState(null,null,'?' + strGET +paramName.toLowerCase() );
+                history.pushState(null,null,'?' + strGET +paramName.toLowerCase() + ',' );
                 products.productsOutput(params['cat'],params[nameFilter]  +paramName.toLowerCase());
             }
         }
@@ -676,6 +675,16 @@ $(document).ready(function(){
             },
             {}
         );
+
+    if(params['color']){
+        var checked = params['color'].split(',');
+
+        for(var i = 0; i < checked.length; i++){
+            $('input[data-filter-id="'+checked[i]+'"]').prop( "checked", true );
+        }
+    }
+
+
 
 
     $('.header-menu_menu__a').removeClass('select');
