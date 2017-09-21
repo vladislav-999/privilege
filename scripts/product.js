@@ -14,11 +14,11 @@ var products_list = [
             "img": "./img/prod-1.png",
             "reviews": 0,
             "badge": "",
-            "features": [{
+            "features": {
                 "size": 5,
                 "brand": "Chanel",
                 "color": "grey"
-            }]
+            }
         }, {
             "id" : 2,
             "name": "Women Shirt Summer",
@@ -30,11 +30,11 @@ var products_list = [
             "img": "./img/prod-2.png",
             "reviews": 2,
             "badge": '<div class="product-card-item-img-badge">new</div>',
-            "features": [{
+            "features": {
                 "size": 5,
                 "brand": "Gucci",
                 "color": "red"
-            }]
+            }
         },{
             "id" : 3,
             "name": "Women Flowers Shirt",
@@ -46,11 +46,11 @@ var products_list = [
             "img": "./img/prod-3.png",
             "reviews": 3,
             "badge":  '<div class="product-card-item-img-badge">new</div>',
-            "features": [{
+            "features": {
                 "size": 5,
                 "brand": "Chanel",
                 "color": "red"
-            }]
+            }
         },{
             "id" : 4,
             "name": "Women Shirt",
@@ -62,11 +62,11 @@ var products_list = [
             "img": "./img/prod-1.png",
             "reviews": 4,
             "badge": "",
-            "features": [{
+            "features": {
                 "size": 5,
                 "brand": "Chanel",
                 "color": "gold"
-            }]
+            }
         }, {
             "id" : 5,
             "name": "Women Jeans Shirt",
@@ -78,11 +78,11 @@ var products_list = [
             "img": "./img/prod-2.png",
             "reviews": 0,
             "badge": "",
-            "features": [{
+            "features": {
                 "size": 5,
                 "brand": "Chanel",
                 "color": "brown"
-            }]
+            }
         }, {
         "id" : 6,
         "name": "Men Suit Jacket",
@@ -94,11 +94,11 @@ var products_list = [
         "img": "./img/prod-4.png",
         "reviews": 0,
         "badge": "",
-        "features": [{
+        "features": {
             "size": 5,
             "brand": "Gucci",
             "color": "white"
-        }]
+        }
     }, {
         "id" : 7,
         "name": "Men Suit Jacket",
@@ -110,11 +110,11 @@ var products_list = [
         "img": "./img/prod-8.png",
         "reviews": 0,
         "badge": "",
-        "features": [{
+        "features": {
             "size": 5,
             "brand": "Gucci",
             "color": "white"
-        }]
+        }
     }, {
         "id" : 8,
         "name": "Men Suit Jacket",
@@ -126,11 +126,11 @@ var products_list = [
         "img": "./img/prod-9.png",
         "reviews": 0,
         "badge": '<div class="product-card-item-img-badge">new</div>',
-        "features": [{
+        "features": {
             "size": 5,
             "brand": "Gucci",
             "color": "brown"
-        }]
+        }
     }, {
         "id" : 9,
         "name": "Sunglasses",
@@ -142,11 +142,11 @@ var products_list = [
         "img": "./img/prod-5.png",
         "reviews": 0,
         "badge": "",
-        "features": [{
+        "features": {
             "size": 5,
             "brand": "Gucci",
             "color": "brown"
-        }]
+        }
     }, {
         "id" : 10,
         "name": "Hat",
@@ -158,11 +158,11 @@ var products_list = [
         "img": "./img/prod-6.png",
         "reviews": 0,
         "badge": "",
-        "features": [{
+        "features": {
             "size": 5,
             "brand": "Gucci",
             "color": "white"
-        }]
+        }
     }, {
         "id" : 11,
         "name": "Clock",
@@ -174,11 +174,11 @@ var products_list = [
         "img": "./img/prod-7.png",
         "reviews": 0,
         "badge": '<div class="product-card-item-img-badge">new</div>',
-        "features": [{
+        "features": {
             "size": 5,
             "brand": "Gucci",
             "color": "yellow"
-        }]
+        }
     }, {
         "id" : 12,
         "name": "Sunglasses",
@@ -190,11 +190,11 @@ var products_list = [
         "img": "./img/prod-10.png",
         "reviews": 0,
         "badge": "",
-        "features": [{
+        "features": {
             "size": 5,
             "brand": "Gucci",
             "color": "white"
-        }]
+        }
     }, {
         "id" : 13,
         "name": "Hat",
@@ -206,11 +206,11 @@ var products_list = [
         "img": "./img/prod-11.png",
         "reviews": 0,
         "badge": "",
-        "features": [{
+        "features": {
             "size": 5,
             "brand": "Gucci",
             "color": "yellow"
-        }]
+        }
     }, {
         "id" : 14,
         "name": "Clock",
@@ -222,11 +222,11 @@ var products_list = [
         "img": "./img/prod-12.png",
         "reviews": 0,
         "badge": '<div class="product-card-item-img-badge">new</div>',
-        "features": [{
+        "features": {
             "size": 5,
             "brand": "Gucci",
             "color": "yellow"
-        }]
+        }
     }, {
         "id" : 15,
         "name": "Sunglasses",
@@ -238,11 +238,11 @@ var products_list = [
         "img": "./img/prod-13.png",
         "reviews": 0,
         "badge": "",
-        "features": [{
+        "features": {
             "size": 5,
             "brand": "Gucci",
             "color": "white"
-        }]
+        }
     }, {
         "id" : 16,
         "name": "Hat",
@@ -254,11 +254,11 @@ var products_list = [
         "img": "./img/prod-14.png",
         "reviews": 0,
         "badge": "",
-        "features": [{
+        "features": {
             "size": 5,
             "brand": "Gucci",
             "color": "red"
-        }]
+        }
     }, {
         "id" : 17,
         "name": "Clock",
@@ -270,11 +270,11 @@ var products_list = [
         "img": "./img/prod-15.png",
         "reviews": 0,
         "badge": '<div class="product-card-item-img-badge">new</div>',
-        "features": [{
+        "features": {
             "size": 5,
             "brand": "Gucci",
             "color": "red"
-        }]
+        }
     }, {
         "id" : 18,
         "name": "Sunglasses",
@@ -286,11 +286,11 @@ var products_list = [
         "img": "./img/prod-16.png",
         "reviews": 0,
         "badge": "",
-        "features": [{
+        "features": {
             "size": 5,
             "brand": "Gucci",
             "color": "white"
-        }]
+        }
     }, {
         "id" : 19,
         "name": "Hat",
@@ -302,11 +302,11 @@ var products_list = [
         "img": "./img/prod-17.png",
         "reviews": 0,
         "badge": "",
-        "features": [{
+        "features": {
             "size": 5,
             "brand": "Gucci",
             "color": "white"
-        }]
+        }
     }, {
         "id" : 20,
         "name": "Clock",
@@ -318,11 +318,11 @@ var products_list = [
         "img": "./img/prod-18.png",
         "reviews": 0,
         "badge": '',
-        "features": [{
+        "features": {
             "size": 5,
             "brand": "Gucci",
             "color": "black"
-        }]
+        }
     }, {
         "id" : 21,
         "name": "Men Suit Jacket",
@@ -334,11 +334,11 @@ var products_list = [
         "img": "./img/prod-19.png",
         "reviews": 0,
         "badge": '<div class="product-card-item-img-badge">new</div>',
-        "features": [{
+        "features": {
             "size": 5,
             "brand": "Gucci",
             "color": "blue"
-        }]
+        }
     }, {
         "id" : 22,
         "name": "Men Suit Jacket",
@@ -350,11 +350,11 @@ var products_list = [
         "img": "./img/prod-4.png",
         "reviews": 0,
         "badge": '',
-        "features": [{
+        "features": {
             "size": 5,
             "brand": "Gucci",
             "color": "white"
-        }]
+        }
     }, {
         "id" : 23,
         "name": "Men Suit Jacket",
@@ -366,11 +366,11 @@ var products_list = [
         "img": "./img/prod-9.png",
         "reviews": 0,
         "badge": '',
-        "features": [{
+        "features": {
             "size": 5,
             "brand": "Gucci",
             "color": "blue"
-        }]
+        }
     }, {
         "id" : 24,
         "name": "Men Suit Jacket",
@@ -382,11 +382,11 @@ var products_list = [
         "img": "./img/prod-4.png",
         "reviews": 0,
         "badge": '',
-        "features": [{
+        "features": {
             "size": 5,
             "brand": "Gucci",
             "color": "multi"
-        }]
+        }
     }, {
         "id" : 25,
         "name": "Men Suit Jacket",
@@ -398,11 +398,11 @@ var products_list = [
         "img": "./img/prod-8.png",
         "reviews": 0,
         "badge": '',
-        "features": [{
+        "features": {
             "size": 5,
             "brand": "Gucci",
             "color": "grey"
-        }]
+        }
     }, {
         "id" : 26,
         "name": "Men Suit Jacket",
@@ -414,11 +414,11 @@ var products_list = [
         "img": "./img/prod-9.png",
         "reviews": 0,
         "badge": '<div class="product-card-item-img-badge">new</div>',
-        "features": [{
+        "features": {
             "size": 5,
             "brand": "Gucci",
             "color": "silver"
-        }]
+        }
     }, {
         "id" : 27,
         "name": "Women White Shirt",
@@ -430,11 +430,11 @@ var products_list = [
         "img": "./img/prod-1.png",
         "reviews": 0,
         "badge": "",
-        "features": [{
+        "features": {
             "size": 5,
             "brand": "Gucci",
             "color": "grey"
-        }]
+        }
     }, {
         "id" : 28,
         "name": "Women Shirt Summer",
@@ -446,11 +446,11 @@ var products_list = [
         "img": "./img/prod-2.png",
         "reviews": 2,
         "badge": '<div class="product-card-item-img-badge">new</div>',
-        "features": [{
+        "features": {
             "size": 5,
             "brand": "Gucci",
             "color": "red"
-        }]
+        }
     },{
         "id" : 29,
         "name": "Women Flowers Shirt",
@@ -462,11 +462,11 @@ var products_list = [
         "img": "./img/prod-3.png",
         "reviews": 3,
         "badge":  '<div class="product-card-item-img-badge">new</div>',
-        "features": [{
+        "features": {
             "size": 5,
             "brand": "Gucci",
             "color": "red"
-        }]
+        }
     },{
         "id" : 30,
         "name": "Women Shirt",
@@ -478,11 +478,11 @@ var products_list = [
         "img": "./img/prod-1.png",
         "reviews": 4,
         "badge": "",
-        "features": [{
+        "features": {
             "size": 5,
             "brand": "Gucci",
             "color": "gold"
-        }]
+        }
     }, {
         "id" : 31,
         "name": "Women Jeans Shirt",
@@ -494,11 +494,11 @@ var products_list = [
         "img": "./img/prod-2.png",
         "reviews": 0,
         "badge": "",
-        "features": [{
+        "features": {
             "size": 5,
             "brand": "Gucci",
             "color": "silver"
-        }]
+        }
     }];
 
 
@@ -562,7 +562,7 @@ var products = {
 
             if(category == products.productList[i].category || category == undefined){
 
-                var reg = products.productList[i].features[0].color;
+                var reg = products.productList[i].features[0];
 
                 if(!filters) {
 
@@ -601,8 +601,8 @@ var products = {
 
     charCheck: function(id, filterParams) {
         var features = filterParams.split('=');
-        console.log(this.productList[id].features[0]);
-        if(filterParams.indexOf(this.productList[id].features[0].color) != -1){
+        console.log(this.productList[id].features[features[0]]);
+        if(filterParams.indexOf(this.productList[id].features[features[0]]) != -1){
             return true;
         }else{
             return false;
