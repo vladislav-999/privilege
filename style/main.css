@@ -735,10 +735,12 @@ ul.footer-menu-category__slvlul a:hover {
   text-align: center;
   border: 1px solid #e5e5e5;
   vertical-align: middle;
-  line-height: 350px; }
+  height: 600px;
+  overflow: hidden;
+  line-height: 600px; }
 
 .product-main-image img {
-  vertical-align: bottom;
+  vertical-align: middle;
   max-width: 100%; }
 
 .product-small-image {
