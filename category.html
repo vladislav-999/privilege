@@ -3,11 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- STYLES -->
     <link rel="stylesheet" href="./style/jquery.formstyler.css">
     <link rel="stylesheet" href="./style/jquery.formstyler.theme.css">
     <link rel="stylesheet" href="./style/main.css">
+    <link rel="stylesheet" href="./style/responsive.css">
     <link rel="stylesheet" href="./style/slick.css">
     <link rel="stylesheet" href="./style/material-design-iconic-font.css">
 
@@ -301,13 +303,13 @@
                         </div>
 
                         <div class="filter-param">
-                            <input id="b1" class="filter-param__input" type="checkbox"><label class="filter-param__label" for="b1">Giorgio Armani</label>
-                            <input id="b2" class="filter-param__input" type="checkbox"><label class="filter-param__label" for="b2">Versace</label>
-                            <input id="b3" class="filter-param__input" type="checkbox"><label class="filter-param__label" for="b3">Glenmuir</label>
-                            <input id="b4" class="filter-param__input" type="checkbox"><label class="filter-param__label" for="b4">Chanel</label>
-                            <input id="b5" class="filter-param__input" type="checkbox"><label class="filter-param__label" for="b5">Gucci</label>
-                            <input id="b6" class="filter-param__input" type="checkbox"><label class="filter-param__label" for="b6">Louis Vuitton</label>
-                            <input id="b7" class="filter-param__input" type="checkbox"><label class="filter-param__label" for="b7">Dolce & Gabbana</label>
+                            <input id="b1" data-filter-id="giorgio armani" class="filter-param__input" type="checkbox"><label class="filter-param__label" for="b1">Giorgio Armani</label>
+                            <input id="b2" data-filter-id="versace" class="filter-param__input" type="checkbox"><label class="filter-param__label" for="b2">Versace</label>
+                            <input id="b3" data-filter-id="glenmuir" class="filter-param__input" type="checkbox"><label class="filter-param__label" for="b3">Glenmuir</label>
+                            <input id="b4" data-filter-id="chanel" class="filter-param__input" type="checkbox"><label class="filter-param__label" for="b4">Chanel</label>
+                            <input id="b5" data-filter-id="gucci" class="filter-param__input" type="checkbox"><label class="filter-param__label" for="b5">Gucci</label>
+                            <input id="b6" data-filter-id="louis Vuitton" class="filter-param__input" type="checkbox"><label class="filter-param__label" for="b6">Louis Vuitton</label>
+                            <input id="b7" data-filter-id="dolce & gabbana" class="filter-param__input" type="checkbox"><label class="filter-param__label" for="b7">Dolce & Gabbana</label>
                         </div>
                     </div>
 
@@ -317,23 +319,23 @@
                         </div>
 
                         <div class="filter-param column-2">
-                            <input id="s1" class="filter-param__input" type="checkbox"><label class="filter-param__label" for="s1">XS</label>
-                            <input id="s2" class="filter-param__input" type="checkbox"><label class="filter-param__label" for="s2">S</label>
-                            <input id="s3" class="filter-param__input" type="checkbox"><label class="filter-param__label" for="s3">M</label>
-                            <input id="s4" class="filter-param__input" type="checkbox"><label class="filter-param__label" for="s4">L</label>
-                            <input id="s5" class="filter-param__input" type="checkbox"><label class="filter-param__label" for="s5">XL</label>
-                            <input id="s6" class="filter-param__input" type="checkbox"><label class="filter-param__label" for="s6">XXL</label>
-                            <input id="s7" class="filter-param__input" type="checkbox"><label class="filter-param__label" for="s7">3XL</label>
-                            <input id="s8" class="filter-param__input" type="checkbox"><label class="filter-param__label" for="s8">4XL</label>
+                            <input id="s1" data-filter-id="xs" class="filter-param__input" type="checkbox"><label class="filter-param__label" for="s1">XS</label>
+                            <input id="s2" data-filter-id="s" class="filter-param__input" type="checkbox"><label class="filter-param__label" for="s2">S</label>
+                            <input id="s3" data-filter-id="m" class="filter-param__input" type="checkbox"><label class="filter-param__label" for="s3">M</label>
+                            <input id="s4" data-filter-id="l" class="filter-param__input" type="checkbox"><label class="filter-param__label" for="s4">L</label>
+                            <input id="s5" data-filter-id="xl" class="filter-param__input" type="checkbox"><label class="filter-param__label" for="s5">XL</label>
+                            <input id="s6" data-filter-id="xxl" class="filter-param__input" type="checkbox"><label class="filter-param__label" for="s6">XXL</label>
+                            <input id="s7" data-filter-id="3xl" class="filter-param__input" type="checkbox"><label class="filter-param__label" for="s7">3XL</label>
+                            <input id="s8" data-filter-id="4xl" class="filter-param__input" type="checkbox"><label class="filter-param__label" for="s8">4XL</label>
 
-                            <input id="s9" class="filter-param__input" type="checkbox"><label class="filter-param__label" for="s9">5XL</label>
-                            <input id="s10" class="filter-param__input" type="checkbox"><label class="filter-param__label" for="s10">6XL</label>
-                            <input id="s11" class="filter-param__input" type="checkbox"><label class="filter-param__label" for="s11">32</label>
-                            <input id="s12" class="filter-param__input" type="checkbox"><label class="filter-param__label" for="s12">34</label>
-                            <input id="s13" class="filter-param__input" type="checkbox"><label class="filter-param__label" for="s13">36</label>
-                            <input id="s14" class="filter-param__input" type="checkbox"><label class="filter-param__label" for="s14">38</label>
-                            <input id="s15" class="filter-param__input" type="checkbox"><label class="filter-param__label" for="s15">42</label>
-                            <input id="s16" class="filter-param__input" type="checkbox"><label class="filter-param__label" for="s16">FREE SIZE</label>
+                            <input id="s9" data-filter-id="5xl" class="filter-param__input" type="checkbox"><label class="filter-param__label" for="s9">5XL</label>
+                            <input id="s10" data-filter-id="6xl" class="filter-param__input" type="checkbox"><label class="filter-param__label" for="s10">6XL</label>
+                            <input id="s11" data-filter-id="32" class="filter-param__input" type="checkbox"><label class="filter-param__label" for="s11">32</label>
+                            <input id="s12" data-filter-id="34" class="filter-param__input" type="checkbox"><label class="filter-param__label" for="s12">34</label>
+                            <input id="s13" data-filter-id="36" class="filter-param__input" type="checkbox"><label class="filter-param__label" for="s13">36</label>
+                            <input id="s14" data-filter-id="38" class="filter-param__input" type="checkbox"><label class="filter-param__label" for="s14">38</label>
+                            <input id="s15" data-filter-id="42" class="filter-param__input" type="checkbox"><label class="filter-param__label" for="s15">42</label>
+                            <input id="s16" data-filter-id="free size" class="filter-param__input" type="checkbox"><label class="filter-param__label" for="s16">FREE SIZE</label>
                         </div>
                     </div>
                 </div>

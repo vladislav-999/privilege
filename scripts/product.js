@@ -15,7 +15,7 @@ var products_list = [
             "reviews": 0,
             "badge": "",
             "features": {
-                "size": 5,
+                "size": "m",
                 "brand": "Chanel",
                 "color": "grey"
             }
@@ -31,7 +31,7 @@ var products_list = [
             "reviews": 2,
             "badge": '<div class="product-card-item-img-badge">new</div>',
             "features": {
-                "size": 5,
+                "size": 's',
                 "brand": "Gucci",
                 "color": "red"
             }
@@ -47,7 +47,7 @@ var products_list = [
             "reviews": 3,
             "badge":  '<div class="product-card-item-img-badge">new</div>',
             "features": {
-                "size": 5,
+                "size": "s",
                 "brand": "Chanel",
                 "color": "red"
             }
@@ -63,7 +63,7 @@ var products_list = [
             "reviews": 4,
             "badge": "",
             "features": {
-                "size": 5,
+                "size": "xl",
                 "brand": "Chanel",
                 "color": "gold"
             }
@@ -79,7 +79,7 @@ var products_list = [
             "reviews": 0,
             "badge": "",
             "features": {
-                "size": 5,
+                "size": "32",
                 "brand": "Chanel",
                 "color": "brown"
             }
@@ -95,7 +95,7 @@ var products_list = [
         "reviews": 0,
         "badge": "",
         "features": {
-            "size": 5,
+            "size": "s",
             "brand": "Gucci",
             "color": "white"
         }
@@ -111,7 +111,7 @@ var products_list = [
         "reviews": 0,
         "badge": "",
         "features": {
-            "size": 5,
+            "size": "m",
             "brand": "Gucci",
             "color": "white"
         }
@@ -127,7 +127,7 @@ var products_list = [
         "reviews": 0,
         "badge": '<div class="product-card-item-img-badge">new</div>',
         "features": {
-            "size": 5,
+            "size": "32",
             "brand": "Gucci",
             "color": "brown"
         }
@@ -143,7 +143,7 @@ var products_list = [
         "reviews": 0,
         "badge": "",
         "features": {
-            "size": 5,
+            "size": "42",
             "brand": "Gucci",
             "color": "brown"
         }
@@ -159,7 +159,7 @@ var products_list = [
         "reviews": 0,
         "badge": "",
         "features": {
-            "size": 5,
+            "size": "s",
             "brand": "Gucci",
             "color": "white"
         }
@@ -175,7 +175,7 @@ var products_list = [
         "reviews": 0,
         "badge": '<div class="product-card-item-img-badge">new</div>',
         "features": {
-            "size": 5,
+            "size": "m",
             "brand": "Gucci",
             "color": "yellow"
         }
@@ -191,7 +191,7 @@ var products_list = [
         "reviews": 0,
         "badge": "",
         "features": {
-            "size": 5,
+            "size": "34",
             "brand": "Gucci",
             "color": "white"
         }
@@ -207,7 +207,7 @@ var products_list = [
         "reviews": 0,
         "badge": "",
         "features": {
-            "size": 5,
+            "size": "l",
             "brand": "Gucci",
             "color": "yellow"
         }
@@ -223,7 +223,7 @@ var products_list = [
         "reviews": 0,
         "badge": '<div class="product-card-item-img-badge">new</div>',
         "features": {
-            "size": 5,
+            "size": "l",
             "brand": "Gucci",
             "color": "yellow"
         }
@@ -239,7 +239,7 @@ var products_list = [
         "reviews": 0,
         "badge": "",
         "features": {
-            "size": 5,
+            "size": "l",
             "brand": "Gucci",
             "color": "white"
         }
@@ -255,7 +255,7 @@ var products_list = [
         "reviews": 0,
         "badge": "",
         "features": {
-            "size": 5,
+            "size": "m",
             "brand": "Gucci",
             "color": "red"
         }
@@ -271,7 +271,7 @@ var products_list = [
         "reviews": 0,
         "badge": '<div class="product-card-item-img-badge">new</div>',
         "features": {
-            "size": 5,
+            "size": "s",
             "brand": "Gucci",
             "color": "red"
         }
@@ -287,7 +287,7 @@ var products_list = [
         "reviews": 0,
         "badge": "",
         "features": {
-            "size": 5,
+            "size": "xl",
             "brand": "Gucci",
             "color": "white"
         }
@@ -303,7 +303,7 @@ var products_list = [
         "reviews": 0,
         "badge": "",
         "features": {
-            "size": 5,
+            "size": 'xxl',
             "brand": "Gucci",
             "color": "white"
         }
@@ -319,7 +319,7 @@ var products_list = [
         "reviews": 0,
         "badge": '',
         "features": {
-            "size": 5,
+            "size": "s",
             "brand": "Gucci",
             "color": "black"
         }
@@ -335,7 +335,7 @@ var products_list = [
         "reviews": 0,
         "badge": '<div class="product-card-item-img-badge">new</div>',
         "features": {
-            "size": 5,
+            "size": "m",
             "brand": "Gucci",
             "color": "blue"
         }
@@ -351,7 +351,7 @@ var products_list = [
         "reviews": 0,
         "badge": '',
         "features": {
-            "size": 5,
+            "size": "s",
             "brand": "Gucci",
             "color": "white"
         }
@@ -367,7 +367,7 @@ var products_list = [
         "reviews": 0,
         "badge": '',
         "features": {
-            "size": 5,
+            "size": "m",
             "brand": "Gucci",
             "color": "blue"
         }
@@ -383,7 +383,7 @@ var products_list = [
         "reviews": 0,
         "badge": '',
         "features": {
-            "size": 5,
+            "size": "s",
             "brand": "Gucci",
             "color": "multi"
         }
@@ -399,7 +399,7 @@ var products_list = [
         "reviews": 0,
         "badge": '',
         "features": {
-            "size": 5,
+            "size": "xl",
             "brand": "Gucci",
             "color": "grey"
         }
@@ -415,7 +415,7 @@ var products_list = [
         "reviews": 0,
         "badge": '<div class="product-card-item-img-badge">new</div>',
         "features": {
-            "size": 5,
+            "size": "s",
             "brand": "Gucci",
             "color": "silver"
         }
@@ -431,7 +431,7 @@ var products_list = [
         "reviews": 0,
         "badge": "",
         "features": {
-            "size": 5,
+            "size": "32",
             "brand": "Gucci",
             "color": "grey"
         }
@@ -447,7 +447,7 @@ var products_list = [
         "reviews": 2,
         "badge": '<div class="product-card-item-img-badge">new</div>',
         "features": {
-            "size": 5,
+            "size": "34",
             "brand": "Gucci",
             "color": "red"
         }
@@ -463,7 +463,7 @@ var products_list = [
         "reviews": 3,
         "badge":  '<div class="product-card-item-img-badge">new</div>',
         "features": {
-            "size": 5,
+            "size": "s",
             "brand": "Gucci",
             "color": "red"
         }
@@ -479,7 +479,7 @@ var products_list = [
         "reviews": 4,
         "badge": "",
         "features": {
-            "size": 5,
+            "size": "38",
             "brand": "Gucci",
             "color": "gold"
         }
@@ -495,7 +495,7 @@ var products_list = [
         "reviews": 0,
         "badge": "",
         "features": {
-            "size": 5,
+            "size": "s",
             "brand": "Gucci",
             "color": "silver"
         }
@@ -578,10 +578,12 @@ var products = {
                     var flag = true;
 
                     var filtersParam = filters.split('&');
-                   // console.log(filtersParam);
 
-                    for(var j = 1; j < filtersParam.length; j++){
-                    //    console.log(this.charCheck(i,filtersParam[j]) + " --- " + filtersParam[j]);
+
+                    for(var j = 0; j < filtersParam.length; j++){
+                        //debugger;
+                       /* console.log(this.charCheck(i,filtersParam[j]) + " --- " + filtersParam[j]);
+                        console.log(filtersParam);*/
                         if(this.charCheck(i,filtersParam[j]) == false) {
                             flag = false;
                         }
@@ -601,11 +603,16 @@ var products = {
 
     charCheck: function(id, filterParams) {
         var features = filterParams.split('=');
-        console.log(this.productList[id].features[features[0]]);
-        if(filterParams.indexOf(this.productList[id].features[features[0]]) != -1){
+        var param = this.productList[id].features[features[0]];
+        console.log(param);
+        if(features[0] != 'cat') {
+            if (filterParams.indexOf(param.toLowerCase()) != -1) {
+                return true;
+            } else {
+                return false;
+            }
+        } else {
             return true;
-        }else{
-            return false;
         }
     },
 
@@ -659,13 +666,16 @@ $(document).ready(function(){
                 {}
             );
 
+
         if(!params[nameFilter]){
             history.pushState(null,null,'?' + strGET+'&'+nameFilter+'='+paramName.toLowerCase() + ',');
-            products.productsOutput(params['cat'],params[nameFilter]  +paramName.toLowerCase());
+            products.productsOutput(params['cat'],strGET+'&'+nameFilter+'='+paramName.toLowerCase() + ',');
+
         }else{
             if(params[nameFilter].indexOf(paramName.toLowerCase() + ',') != -1){
 
                 sunstr=strGET.replace(new RegExp(paramName.toLowerCase().replace(' ','%20').replace(' ','%20') + ',','g'), '');
+
 
                 params = sunstr.replace('?','')
                     .split('&')
@@ -724,21 +734,25 @@ $(document).ready(function(){
             {}
         );
 
-    if(params['color']){
-        var checked = params['color'].split(',');
+    console.log(params);
 
-        for(var i = 0; i < checked.length; i++){
-            $('input[data-filter-id="'+checked[i]+'"]').prop( "checked", true );
+
+    for(var param in params) {
+        if (params[param]) {
+            var checked = params[param].split(',');
+
+            for (var i = 0; i < checked.length; i++) {
+                $('input[data-filter-id="' + checked[i] + '"]').prop("checked", true);
+            }
         }
     }
-
 
 
 
     $('.header-menu_menu__a').removeClass('select');
     $('a[href="./category.html?'+strGET+'"]').addClass('select');
 
-    products.productsOutput(params['cat'], params['color']);
+    products.productsOutput(params['cat'], strGET);
 
 
 
